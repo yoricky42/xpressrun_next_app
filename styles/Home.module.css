@@ -1,116 +1,977 @@
-.container {
-  padding: 0 2rem;
+.home{
+  font-family: 'Hind Siliguri', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.demo {
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  text-decoration-line: underline;
+}
+.buttonTop:hover {
+  background: rgba(0, 0, 0, 0.829);
+}
+.selectIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  width: 20px;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.TOPIMGE {
+  width: 100%;
+}
+.HOMENAV {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  z-index: 30;
+}
+.Container-NavBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.paddingHomeCenter {
+  padding: 10px 150px !important;
+}
+.navbarHome {
+  background: #181818 !important;
+  box-shadow: none !important;
+  padding: 0 0 !important ;
+}
+
+.homeHeaderContent {
+  background: #181818;
+  color: white;
+  min-height: 51vw;
+  line-height: 1 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px !important;
+}
+.selectBox{
+  color: #181818;
+  font-weight: 400;
+  pointer-events: none;
+  font-size: large;
+}
+.homeHeaderContentFirstPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 150px;
+}
+.homeHeaderText {
+  font-size: 6vw;
+  font-weight: bold;
+}
+.lastmileText {
+  font-size: 1.6vw;
+  margin-top: 30px !important;
+}
+.homeHeaderContentSelectAndOthers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: max-content;
+  gap: 10px;
+  margin-top: 30px;
+}
+.homeHeaderContentSelect select {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  width: max-content;
+  cursor: pointer;
+  padding: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-appearance: none;
+}
+.homeHeaderContentSelect {
+  position: relative;
+  cursor: pointer;
+  background: #ffdd29;
+  width: max-content;
+  border-radius: 8px;
+}
+.select-option-type {
+  color: red;
+}
+.homeHeaderContentGifPartGif {
+  width: 45%;
+  margin-left: 1vw;
+}
+.slideText {
+  position: relative;
+  overflow: hidden;
+  height: 6vw;
+}
+.slideText1,
+.slideText2 {
+  min-width: max-content;
+}
+.slideText1 {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  animation: slidetext1 12s infinite ease-in-out;
+  -webkit-animation: slidetext1 12s infinite ease-in-out;
+}
+.slideText2 {
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
+  animation: slidetext2 12s infinite ease-in-out;
+  -webkit-animation: slidetext2 12s infinite ease-in-out;
+}
+
+@keyframes slidetext1 {
+  0% {
+    bottom: 0;
+  }
+  30% {
+    bottom: 0;
+    opacity: 1;
+  }
+  50% {
+    bottom: 100%;
+    opacity: 0;
+  }
+  50.1% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  80% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slidetext2 {
+  0% {
+    bottom: -100%;
+  }
+  30% {
+    bottom: -100%;
+  }
+  50% {
+    bottom: 0;
+  }
+  80% {
+    bottom: 0;
+    opacity: 1;
+  }
+  99.9% {
+    bottom: 100%;
+    opacity: 0;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+
+.appImagePart {
+  background: #ffdd29;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.vector1,
+.vector2 {
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+}
+.vector1 {
+  left: 0;
+  animation: vector1Anim 5s infinite ease-in-out;
+}
+.vector2 {
+  right: 0;
+  animation: vector2Anim 5s infinite ease-in-out;
+}
+@keyframes vector1Anim {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes vector2Anim {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: -50px;
+  }
+  100% {
+    right: 0;
+  }
+}
+.businessOrder {
+  z-index: 4;
+  width: max-content;
+}
+.shoopifyPubPart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px !important;
+  padding-bottom: 45px !important;
+  font-size: 2.4vw;
+  font-weight: 500;
+}
+.vectorApp {
+  width: 20vw;
+}
+.shpoopifyCard {
+  position: relative;
+  margin-left: 1vw;
+  width: 14vw;
+  transition: 0.4s;
+  opacity: 1;
+}
+.shpoopifyCardOFF {
+  position: relative;
+  margin-left: 15vw;
+  width: 14vw;
+  right: 0;
+  opacity: 0;
+}
+.shpoopifyText {
+  opacity: 1;
+}
+.shpoopifyTextOFF {
+  opacity: 0;
+}
+.affordablePart {
+  width: 100%;
+  position: relative;
+  height: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.1;
+  overflow: hidden;
+  padding: 0 2vw;
+}
+.affordablePartTextOFF {
+  width: 45%;
+  position: relative;
+  left: -25%;
+  scale: 0.5;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.affordableCardPartOFF {
+  width: 60%;
+  position: relative;
+  right: -25%;
+  scale: 0.5;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.affordablePartText {
+  width: 50%;
+  position: relative;
+  left: 0;
+  scale: 1;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  margin: 0 30px;
+}
+.affordableCardPart {
+  width: 50%;
+  position: relative;
+  right: 0;
+  scale: 1;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.bigTypeTextAffordable {
+  font-size: 6vw;
+  font-weight: bold;
+  min-width: max-content;
+}
+.smallTypeTextAffordable {
+  font-size: 1.5vw;
+  color: #bdbdbd;
+}
+.smallTypeTextAffordableLink {
+  color: #ffdd29 !important;
+}
+.smallTypeTextAffordableLong {
+  width: 90%;
+  line-height: 1.5 !important;
+}
+
+.affordableCard {
+  width: 100%;
+}
+.arrowLink {
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.smallTypeTextAffordableLinkPart:hover > .arrowLink {
+  margin-left: 20px;
+}
+.fullyPart {
+  line-height: 1;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fullyPartBIG {
+  min-width: max-content;
+}
+.smallTypeTextFullyLong {
+  width: 32%;
+  font-size: 1.7vw;
+  justify-self: flex-start;
+  padding-left: 10px;
+}
+
+.fullyPartTextContentOFF {
+  position: relative;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 100px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.fullyPartTextContent {
+  position: relative;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+.PR {
+  position: relative;
+}
+
+.shoopifyCardBlack{
+  width: 100%;
+  min-width: 150px;
+}
+
+.blancFake {
+  position: absolute;
+  background: #ffff;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 100%;
+  transition: 0.5s;
+}
+.blancFakeOFF {
+  position: absolute;
+  background: #ffff;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  transition: 1s;
+}
+.cardPartof {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 5vw !important;
+  margin-bottom: 10vw !important;
+}
+.Oncard {
+  position: relative;
+  top: 0;
+  width: 320px;
+  min-height: 17vw;
+  padding: 15px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  transition: 1s;
+  opacity: 1;
 }
-
-.footer {
+.Oncard1 {
+  position: relative;
+  top: 100px;
+  width: 17vw;
+  min-height: 17vw;
+  padding: 15px;
+  border-radius: 8px;
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+.Oncard2 {
+  position: relative;
+  top: 150px;
+  width: 17vw;
+  min-height: 17vw;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+.Oncard3 {
+  position: relative;
+  top: 200px;
+  width: 17vw;
+  min-height: 17vw;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+.OncardSmallTitle {
+  color: #202020;
+}
+.api {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.footer a {
+.api1 {
+  background: rgb(253, 248, 238);
+}
+.api2 {
+  background: rgb(253, 238, 238);
+}
+.api3 {
+  background: rgb(238, 244, 253);
+}
+.Oncard:hover {
+  box-shadow: 0 0 13px rgb(226, 226, 226);
+  transition: 0.2s !important;
+}
+.Oncard:hover > .arrowBlackCard {
+  opacity: 1;
+  transition: 0.2s !important;
+}
+.Oncardsmalltext {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-top: 10px;
+}
+.OncardSmallTitle {
+  font-size: 2vw;
+  font-weight: 500;
+}
+.arrowBlackCard {
+  margin-top: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.currentlyPart {
+  position: relative;
+  min-height: 48vw;
+  background: #ffdd29;
+  overflow: hidden;
+  padding-top: 7vw !important;
+  padding-bottom: 7vw !important;
   display: flex;
-  justify-content: center;
+  padding: 10px;
+}
+.vectorBool {
+  position: absolute;
+  width: 35vw;
+  opacity: 0.9;
+}
+.vecterBool1 {
+  bottom: -10%;
+  left: -10%;
+}
+.vecterBool2 {
+  top: -20%;
+  right: -10%;
+}
+.currentlyElementContainer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-grow: 1;
+  justify-content: stretch;
+  width: 100%;
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.currentlyElementText {
   text-align: center;
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.currentlyElementTextBig {
+  font-size: 5vw;
+  font-weight: bold;
+  line-height: 1;
 }
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.currentlyElementTextSmall {
+  font-size: 35px;
+  font-weight: 500;
+  padding: 30px 0;
 }
-
-.grid {
+.currentlyElementCard {
+  display: flex;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 330px;
+  align-items: center;
+}
+.applink-currently {
+  width: 15vw;
+  padding: 15px;
+  border: 2px solid black;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  color: #181818;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.applink-currently:hover {
+  box-shadow: 0 0 7px #1818187a;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.VectorArrow{
+  width: 60px;
+  position: absolute;
+  right: -70px;
+  bottom: 0;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.currentlyElementCard2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.currentlyElementCardcontainerCardOFF {
+  transition: 0.7s;
+  opacity: 0;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.currentlyElementCardcontainerCard {
+  transition: 1s ease-in-out;
+  opacity: 1;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.curentlyCardType {
+  width: 100%;
+  min-width: 120px;
 }
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.currentlyElementCard1,
+.currentlyElementCard3 {
+  position: relative;
+  margin: 0 10px;
 }
-
-@media (max-width: 600px) {
-  .grid {
+.currentlyElementCard1-1 {
+  position: absolute;
+  top: 60px;
+  left: 200px;
+  z-index: 3;
+}
+.currentlyElementCard1-2 {
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+}
+.currentlyElementCard3-1 {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+.currentlyElementCard3-2 {
+  position: absolute;
+  left: 5%;
+  bottom: 3%;
+}
+@media screen and (max-width: 964px) {
+  .paddingHomeCenter {
+    padding: 20px 120px !important;
+  }
+}
+@media screen and (max-width: 811px) {
+  .paddingHomeCenter {
+    padding: 20px 60px !important;
+  }
+  .shoopifyPubPart {
+    flex-direction: column;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .shpoopifyCard {
+    margin-left: 0;
     width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .HOMENAV {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: 30;
+  }
+}
+@media screen and (max-width: 652px) {
+  .businessOrder {
+    width: 100%;
+    height: 100%;
+  }
+  .shpoopifyCard {
+    position: relative;
+    margin-left: 1vw;
+    width: 100%;
+    transition: 0.4s;
+    opacity: 1;
+  }
+  .reverse {
+    flex-direction: column-reverse !important;
+  }
+  .paddingHomeCenter {
+    padding: 30px 25px !important;
+  }
+  .affordablePart {
+    height: max-content;
+    flex-direction: column;
+    text-align: center;
+  }
+  .affordablePartTextOFF {
+    width: 100%;
+  }
+  .affordableCardPartOFF {
+    width: 90%;
+  }
+  .affordablePartText {
+    width: 100%;
+    margin: 0;
+  }
+  .affordableCardPart {
+    width: 90%;
+  }
+  .bigTypeTextAffordable {
+    font-size: 8vw;
+  }
+  .smallTypeTextAffordableLong {
+    font-size: 3.1vw;
+    width: 100%;
+  }
+  .smallTypeTextAffordable {
+    font-size: 3vw;
+  }
+  .shpoopifyText {
+    font-size: 4vw;
+  }
+  .shpoopifyCard {
+    margin-left: 0;
+    width: 100%;
+  }
+  .affordableCard {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .fullyPartTextContent {
+    align-items: center;
     flex-direction: column;
   }
+  .smallTypeTextFullyLong {
+    width: 100%;
+    font-size: 3vw;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .cardPartof {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Oncard {
+    margin: 20px 0;
+  }
+  .icon-card-img-api {
+    width: 80%;
+  }
+  .api {
+    height: 13vw;
+    width: 13vw;
+  }
+  .OncardSmallTitle {
+    font-size: 4vw;
+  }
+  .currentlyElementCard {
+    display: flex;
+    justify-content: space-between;
+  }
+  .applink-currently {
+    width: 40vw;
+  }
+  /* .currentlyElementCardcontainerCard {
+   
+  } */
+  .currentlyElementCard1-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .currentlyElementCard1-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .currentlyElementCard3-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .currentlyElementCard3-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slideText {
+    height: 10vw;
+  }
+  .homeSeaderSontentSelect {
+    font-size: 2.5vw;
+  }
+  .homeHeaderContentSelectAndOthers {
+    width: 100%;
+  }
+  .homeHeaderContentFirstPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 55px;
+  }
+  .Driver-section3-text-app-buttons-button-container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .paddingHomeCenter {
+    padding: 30px 10px !important;
+  }
+  .homeHeaderText {
+    font-size: 10vw;
+  }
+  .lastmileText {
+    font-size: 4vw;
+    margin-top: 20px !important;
+  }
+  .homeSeaderSontentSelect {
+    font-size: 4vw;
+  }
+  .homeHeaderContentGifPartGif {
+    display: none;
+  }
+  .affordable-Part {
+    height: max-content;
+    flex-direction: column;
+    text-align: center;
+  }
+  .affordablePartText {
+    width: 100%;
+  }
+  .bigTypeTextAffordable {
+    font-size: 13vw;
+  }
+  .smallTypeTextAffordableLong {
+    width: 100%;
+  }
+  .smallTypeTextAffordable {
+    font-size: 5vw;
+  }
+  .shpoopifyText {
+    font-size: 4vw;
+  }
+  .shpoopifyText {
+    font-size: 6vw;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 15px !important;
+  }
+  .affordableCardPart {
+    width: 95%;
+  }
+  .affordableCard {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .fullyPart {
+    line-height: 1;
+    height: max-content;
+  }
+  .bigTypeTextAffordableFully {
+    font-size: 11vw !important;
+  }
+  .fullyPartTextContent {
+    align-items: center;
+    flex-direction: column;
+  }
+  .smallTypeTextFullyLong {
+    width: 100%;
+    font-size: 5vw;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .cardPartof {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Oncard {
+    margin: 20px 0;
+    width: 90%;
+  }
+  .Oncard1,
+  .Oncard2,
+  .Oncard3 {
+    width: 90%;
+  }
+  .icon-card-img-api {
+    width: 80%;
+  }
+  .api {
+    height: 13vw;
+    width: 13vw;
+  }
+  .OncardSmallTitle {
+    font-size: 5vw;
+  }
+  .Oncardsmalltext {
+    font-size: 4vw;
+  }
+  .currentlyElementCard {
+    display: flex;
+    justify-content: space-between;
+  }
+  .applink-currently {
+    width: 40vw;
+  }
+  .currentlyElementTextBig {
+    font-size: 7vw;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+
+  /* .currentlyElementCardcontainerCard {
+   
+  } */
+  .currentlyElementCard1-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .currentlyElementCard1-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .currentlyElementCard3-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .currentlyElementCard3-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width:483px) {
+  .currentlyElementTextSmall{
+    font-size: 30px;
+  }
+  .shoopifyCardBlack {
+    width: 210px;
+    min-width: none;
+}
+.VectorArrow {
+  width: 40px;
+  position: absolute;
+  right: -35px;
+  bottom: 20px;
+}
+.currentlyElementCard {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    height: max-content;
+    padding: 20px 0;
+}
+.curentlyCardType {
+  width: 70%;
+  min-width: 120px;
+}
+.currentlyElementCardcontainerCard {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+@media screen and (max-width:300px) {
+  .currentlyElementTextSmall{
+    font-size: 30px;
+  }
+  .shoopifyCardBlack {
+    width: 100%;
+    min-width: none;
+}
+.VectorArrow {
+  display: none;
+}
+
 }

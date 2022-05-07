@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap');
+.about{
+  font-family: 'Hind', sans-serif;
+  line-height: 1.3;
+}
+.firstAbout{
+  background-color: #181818;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  padding: 190px 50px;
+  padding-bottom: 80px;
+}
+.firstAbouttext{
+  line-height: 1.1;
+}
+
+.firstAboutImg{
+  border-radius: 32px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.firstAboutBig{
+  font-weight: bold;
+  font-size: 62px;
+}
+.firstAboutLigneBottom{
+  width: 200px;
+  height: 17px;
+  background-color: #FFDD29;
+  margin: 20px 0;
+}
+.firstAboutSmall{
+  width: 80%;
+}
+.secondAbout{
+  padding: 70px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.AboutTitle{
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 10px ;
+}
+.secondAbouTitle{
+  width:max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secondAboutUnderline{
+  margin: 20px 0;
+  height: 5px;
+  width: 80%;
+  background-color: #FFDD29;
+}
+.secondAboutText{
+  width: 720px;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 19px;
+  font-weight: 400;
+}
+.secondAboutJoinButton{
+  display: block;
+  margin: 20px 0;
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: #FFDD29;
+  color: black;
+  border-radius:50px ;
+  font-weight: bold;
+}
+.thirdAbout{
+  text-align: center;
+}
+.thirdAboutSubTitle{
+  font-size: 15px;
+  font-weight: 400;
+  color: #4F5665;
+}
+.thirdAbout img{
+  margin-top: 100px;
+  width: 75%;
+}
+
+@media screen and (max-width:947px) {
+  
+  .firstAbout{
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstAbouttext {
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstAboutSmall {
+    text-align: center;
+  }
+  .firstAboutImg img {
+   margin-top: 50px;
+}
+}
+
+@media screen and (max-width:778px) {
+  
+  .secondAboutText{
+    width: 100%;
+  }
+  .thirdAbout img {
+    margin-top: 100px;
+    width: 100%;
+}
+}
+
+@media screen and (max-width:503px) {
+  .firstAboutBig {
+    font-weight: bold;
+    font-size: 12vw;
+    min-width: max-content;
+}
+.firstAboutImg img {
+  width: 100%;
+}
+.firstAbout {
+  padding: 100px 10px;
+}
+}

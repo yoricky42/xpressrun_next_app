@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;700&display=swap");
+.business {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Hind Siliguri", sans-serif !important;
+  overflow: hidden;
+}
+.paddingHomeCenter {
+  padding: 10px 150px !important;
+}
+.businessPart1_partenerLogos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+  min-height: 95vh;
+  padding: 100px 150px !important
+}
+
+.businessPart1 {
+  margin: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+  height: max-content;
+}
+.businessPart1ContenuDeTexte{
+  min-width: 40%;
+  text-align: start;
+}
+.businessPart1ImageDashboard {
+  width:45%;
+}
+.businessPart1PartenerLogos{
+  width: 100%;
+}
+
+
+.businessPart1BussinessTitleBig {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-top: 3vw;
+}
+.businessPart1BusinnesSubtitle {
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 300;
+  margin: 2vw 0;
+}
+.businessPart1Buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 4vw;
+}
+.businessPart1ButtonsButton {
+  padding: 15px 30px;
+  color: #181818;
+  border-radius: 7px;
+  margin-right:20px;
+  width: 200px;
+  font-weight: 400;
+  text-align: center;
+  transition: .2s;
+}
+
+.Getbutton {
+  background-color: #ffdd29;
+  color: #181818;
+}
+.Getbutton:hover{
+  background-color: #e7c620;
+  color: #fff;
+}
+.schedule {
+  border:1px solid #ffff;
+  color: #fff;
+}
+.schedule:hover{
+  background-color: #ffff;
+  color: #181818;
+}
+.schedule2{
+  margin: 20px 0;
+  background-color:#181818;
+  color: #fff;
+}
+
+
+
+/* ===============================2 */
+.italic {
+  font-style: italic;
+  min-width: max-content;
+}
+.businessPart2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 100px !important;
+}
+.businnesPart2Element {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-left: #ffdd29 2px solid;
+  padding: 15px;
+  line-height: 1.2;
+  margin: 10px;
+  transform: translateY(0);
+  transition: 1s;
+  height: 17vh;
+}
+.businnesPart2Element1 {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.businnesPart2Element2 {
+  opacity: 0;
+  transform: translateY(-200px);
+}
+.businnesPartElement3 {
+  opacity: 0;
+  transform: translateY(-300px);
+}
+.businnesPart2ElementTitle {
+  font-size: 55px;
+  font-weight: bold;
+  color: #181818;
+  min-width: 100%;
+}
+
+.businessPart3ElementTextTitle {
+  font-size: 5vw;
+  width: 50%;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 15px;
+  min-width: max-content;
+}
+.businessPart3ElementTextOFF {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.businessPart3ElementText {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.5s;
+}
+.businessPart3ElementTextSubtitle {
+  font-size: 1.7vw;
+  line-height: 2;
+  color: #bdbdbd;
+  min-width: max-content;
+}
+.businessPart3ElementCard {
+  width: 100%;
+  transform: translateY(0);
+  opacity: 1;
+  border-radius: 32px;
+  transform: scale(1);
+  transition: 1s;
+}
+.businessPart3ElementCardOFF {
+  width: 100%;
+  transform: translateY(-200px);
+  opacity: 0;
+  border-radius: 0;
+  transform: scale(1.3);
+  border-radius: 0;
+  transition: 1s;
+}
+/* ============================================= */
+
+.retailersASection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:100px 130px;
+}
+
+.retailersASectionSection{
+  width: 45%;
+}
+.retailersASectionSection p{
+  line-height: 1.3;
+}
+.retailersASectionImg{
+  width: 35%;
+}
+.retailersASectionImg img{
+  width: 100%;
+}
+.retailersASectionImgEcomContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.retailersASectionImgEcom{
+  position: relative;
+  animation: rotateEcom 10s infinite linear;
+}
+.retailersASectionImgXpress{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15% !important;
+  transform: translate(-50%,-50%);
+}
+.retailersASectionImgTracking{
+  animation: scale 3s infinite linear;
+}
+.lastSection{
+  width: 100% !important;
+  text-align: center;
+}
+.alignToutColum{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotateEcom{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes scale{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+@media screen and (max-width: 1212px) {
+  .businessPart1_partenerLogos {
+    padding: 100px 10px !important;
+  }
+  .businessPart1ImageDashboard {
+    width: 75%;
+  }
+  .retailersASection,.businessPart1{
+    flex-direction: column-reverse;
+  }
+  .reverse {
+    flex-direction: column!important;
+  }
+  .businessPart1ContenuDeTexte{
+    text-align: center;
+  }
+  .businessPart1Buttons{
+    justify-content: center;
+  }
+  .retailersASectionSection{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .retailersASectionImg{
+    width: 100%;
+  }
+  .retailersASection{
+    padding:50px;
+  }
+  
+}
+@media screen and (max-width: 811px) {
+
+  .businessPart3ElementCard {
+    border-radius: 16px !important;
+  }
+  .businessPart3ElementTextTitle {
+    font-size: 6vw;
+    width: 50%;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .businessPart3ElementTextSubtitle {
+    font-size: 2.2vw;
+    line-height: 2;
+    color: #bdbdbd;
+  }
+  .businessPart4Title {
+    font-size: 8vw;
+  }
+  .businessPart4Subtitle {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 652px) {
+  .businessPart1BussinessTitleBig {
+    font-size: 9vw;
+    line-height: 1;
+    font-weight: bold;
+    margin: 4vw 0;
+  }
+  .businessPart1PartenerLogos{
+    width: 100%;
+  }
+  .businessPart1ImageDashboard{
+    width: 80%;
+  }
+  .businessPart1Buttons {
+    flex-direction: column;
+  }
+  .businessPart2 {
+    flex-direction: column;
+    margin-top: 50px !important;
+  }
+  .businnesPart2-element-left {
+    align-self: flex-end;
+  }
+  .businessPart3-element {
+    height: max-content;
+    flex-direction: column;
+    text-align: center;
+  }
+  .businessPart1Buttons-button{
+    margin: 10px 0;
+    width: 170px;
+    padding: 10px;
+  }
+  .businessPart3-element-text-title {
+    font-size: 8vw;
+    width: 100%;
+  }
+  .businessPart3-element-text-subtitle {
+    font-size: 4.2vw;
+    line-height: 1.1;
+    color: #bdbdbd;
+  }
+  .businessPart3-element-text {
+    width: 100%;
+    margin: 70px 0;
+  }
+  .businessPart3-element-ORDER {
+    flex-direction: column-reverse !important;
+  }
+  .businessPart5-container {
+    flex-direction: column;
+  }
+  .businessPart5-element-1 {
+    border-bottom: 1px solid #fff;
+  }
+  .businessPart5-element-2 {
+    border-top: 1px solid #fff;
+  }
+  .businessPart5-element-title {
+    font-size: 7.5vw;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  .businessPart5-element-subtitle {
+    font-size: 3vw;
+    width: 70%;
+    color: #bdbdbd;
+  }
+  .retailers-a-section-img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .paddingHomeCenter {
+    padding: 30px 10px!important;
+}
+}
+
+@media screen and (max-width: 652px){
+  .businessPart1ButtonsButton {
+    margin: 10px 0;
+    width: 170px;
+    padding: 10px;
+}
+}
+
+@media screen and (max-width: 652px){
+  .businnesPart2ElementLeft {
+    align-self: flex-end;
+}
+}
+
+@media screen and (max-width: 220px) {
+  .businessPart1-bussinessTitleBig {
+    font-size: 10vw;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-top: 3vw;
+  }
+  .businessPart1Buttons {
+    flex-direction: column;
+  }
+  .businessPart2 {
+    flex-direction: column;
+    margin-top: 50px !important;
+  }
+  .businnesPart2-element-left {
+    align-self: flex-start;
+  }
+}
