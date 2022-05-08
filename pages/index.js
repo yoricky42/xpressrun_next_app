@@ -3,25 +3,25 @@ import { React, useState, useEffect } from "react";
 // import Navbar from "../NavbarCOMP/Navbar";
 import style from "../styles/Home.module.css";
 
-import gifCard from "../Assets/home/Delivery Scooter-2.gif";
-import vector1 from "../Assets/home/Vector.svg";
-import vector2 from "../Assets/home/Vector 2.svg";
-import businessOrder from "../Assets/home/BusineessOrder.png";
-import sendingCard from "../Assets/home/DrawKit-onlineshopping-Illustration-09 1.svg";
-import seamlessCard from "../Assets/home/DrawKit-Vector-Illustration-ecommerce-02 1.svg";
-import deliveryCard from "../Assets/home/delivery.svg";
-import VectorArrow from "../Assets/home/VectorArrow.svg";
-import shoopifyCard from "../Assets/home/shoopify.svg";
-import shoopifyCardBlack from "../Assets/home/shoopifyCardBlack.svg";
-import vectrBool1 from "../Assets/home/vectorBool1.svg";
-import vectrBool2 from "../Assets/home/vectorBool2.svg";
-import api1 from "../Assets/home/api 1.svg";
-import api2 from "../Assets/home/api 2.svg";
-import api3 from "../Assets/home/api 3.svg";
-import ShoppingCart from "../Assets/home/Illustrator2.svg";
-import deliveryMan from "../Assets/home/Illustrator1.svg";
-import arrowAffordablelink from "../Assets/home/akar-icons_arrow-right.svg";
-import arrowBlack from "../Assets/home/arrowBlack.svg";
+import gifCard from "../public/Assets/home/Delivery Scooter-2.gif";
+import vector1 from "../public/Assets/home/Vector.svg";
+import vector2 from "../public/Assets/home/Vector 2.svg";
+import businessOrder from "../public/Assets/home/BusineessOrder.png";
+import sendingCard from "../public/Assets/home/DrawKit-onlineshopping-Illustration-09 1.svg";
+import seamlessCard from "../public/Assets/home/DrawKit-Vector-Illustration-ecommerce-02 1.svg";
+import deliveryCard from "../public/Assets/home/delivery.svg";
+import VectorArrow from "../public/Assets/home/VectorArrow.svg";
+import shoopifyCard from "../public/Assets/home/shoopify.svg";
+import shoopifyCardBlack from "../public/Assets/home/shoopifyCardBlack.svg";
+import vectrBool1 from "../public/Assets/home/vectorBool1.svg";
+import vectrBool2 from "../public/Assets/home/vectorBool2.svg";
+import api1 from "../public/Assets/home/api 1.svg";
+import api2 from "../public/Assets/home/api 2.svg";
+import api3 from "../public/Assets/home/api 3.svg";
+import ShoppingCart from "../public/Assets/home/Illustrator2.svg";
+import deliveryMan from "../public/Assets/home/Illustrator1.svg";
+import arrowAffordablelink from "../public/Assets/home/akar-icons_arrow-right.svg";
+import arrowBlack from "../public/Assets/home/arrowBlack.svg";
 import { InView } from "react-intersection-observer";
 import Link from "next/link";
 import Head from 'next/head'
@@ -111,7 +111,7 @@ function Home() {
         <Image src={vector2} alt=""/>
         </div>
         <div className={style.businessOrder}>
-          <Image src={businessOrder} alt="" />
+          <Image src={businessOrder} alt="" layout="fixed" />
         </div>
       </div>
       <InView

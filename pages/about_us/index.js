@@ -1,9 +1,8 @@
 import { React, useEffect } from "react";
 import TopFunct from "../../component/Top/top";
 import style from "./about.module.css";
-
-import headimg from "../../Assets/about/headimg1.png";
-import thirdimg from "../../Assets/about/HugeGlobal.svg";
+import headimg from "../../public/Assets/about/headimg1.png";
+import thirdimg from "../../public/Assets/about/HugeGlobal.svg";
 import Image from "next/image";
 import Head from "next/head";
 

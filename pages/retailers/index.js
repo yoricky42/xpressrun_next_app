@@ -3,12 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { InView } from "react-intersection-observer";
-import Dashboard from "../../Assets/retailers/Integrations.png";
-import eCom from "../../Assets/retailers/eCom.png";
-import provider from "../../Assets/retailers/provider.svg";
-import xpressRun from "../../Assets/retailers/xpressRun.svg";
-import tracking from "../../Assets/retailers/tracking.jpg";
-import parterLogo from "../../Assets/retailers/partenerLogos.svg";
+import Dashboard from "../../public/Assets/retailers/Integrations.png";
+import eCom from "../../public/Assets/retailers/eCom.png";
+import provider from "../../public/Assets/retailers/provider.svg";
+import xpressRun from "../../public/Assets/retailers/xpressRun.svg";
+import tracking from "../../public/Assets/retailers/tracking.jpg";
+import parterLogo from "../../public/Assets/retailers/partenerLogos.svg";
 import TopFunct from "../../component/Top/top";
 import style from "./retailers.module.css";
 

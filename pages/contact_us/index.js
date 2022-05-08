@@ -3,7 +3,7 @@ import NumberFormat from "react-number-format";
 import style from "./contact.module.css";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import logo from "../../Assets/contact/logo.jpeg";
+import logo from "../../public/Assets/contact/logo.jpeg";
 import Head from "next/head";
 
 const SERVICE_ID = "service_4tvjs98"; //"service_4wheitc";
