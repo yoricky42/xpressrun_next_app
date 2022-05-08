@@ -111,7 +111,7 @@ function Home() {
         <Image src={vector2} alt=""/>
         </div>
         <div className={style.businessOrder}>
-          <Image src={businessOrder} alt="" layout="fixed" />
+          <Image src={businessOrder} alt=""/>
         </div>
       </div>
       <InView
