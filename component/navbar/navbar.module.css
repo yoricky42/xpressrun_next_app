@@ -198,7 +198,7 @@
     top: 0;
     z-index: 1;
     width: 100%;
-    padding:10px 50px;
+    padding:10px 10px;
   }
   .drop_down_company_dropdown{
     position: relative;
@@ -243,8 +243,5 @@
   }
   .fa_icon_type_navbar{
     font-size: 21px;
-  }
-  .navbar{
-    padding:10px 10px;
   }
 }
