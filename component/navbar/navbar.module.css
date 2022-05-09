@@ -237,7 +237,7 @@
   
 }
 
-@media screen and (max-width: 332px) {
+@media screen and (max-width: 499px) {
   .navbar_logo_type_content_inner_logo{
     width: 100px;
   }

@@ -29,7 +29,7 @@
 }
 .contactUs_leftSide_social {
    display: flex;
-   width: 50%;
+   width: 150px;
    justify-content: space-between;
    align-items: center;
    margin-top: 20px;
@@ -45,7 +45,7 @@
 }
 .contactUs_leftSide_Subtitle{
     margin: 20px 0 ;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 75%;
     text-align: justify;
     font-weight: 300;
@@ -146,9 +146,6 @@
     .contactUs_leftSide_title{
         font-size: 70px;
     }
-    .contactUs_leftSide_social{
-        width: 30%;
-    }
     .contactUs_rightSide{
         margin-bottom: 50px;
     }
@@ -168,9 +165,6 @@
     }
     .contactUs_leftSide_line{
         width: 100%;
-    }
-    .contactUs_leftSide_social{
-        width: 60%;
     }
     .contactUs_leftSide_title{
         font-size: 12vw;
