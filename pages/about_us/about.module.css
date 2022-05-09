@@ -7,9 +7,9 @@
   background-color: #181818;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: #fff;
-  padding: 190px 50px;
+  padding: 190px 150px;
   padding-bottom: 80px;
 }
 .firstAbouttext{

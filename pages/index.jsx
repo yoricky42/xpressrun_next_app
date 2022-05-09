@@ -3,6 +3,7 @@ import { React, useState, useEffect } from "react";
 // import Navbar from "../NavbarCOMP/Navbar";
 import style from "../styles/Home.module.css";
 
+
 import gifCard from "../public/Assets/home/Delivery Scooter-2.gif";
 import vector1 from "../public/Assets/home/Vector.svg";
 import vector2 from "../public/Assets/home/Vector 2.svg";

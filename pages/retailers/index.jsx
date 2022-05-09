@@ -128,7 +128,7 @@ function Business() {
             Increment();
           }
         }}
-        className={`${style.businessPart2} ${style.paddingHomeCenter}`}
+        className={`${style.businessPart2} paddingHomeCenter`}
       >
         <div className={`${style.businnesPart2Element}`}>
           <p className={`${style.businnesPart2ElementTitle}`}>{I}</p>
