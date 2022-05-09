@@ -239,9 +239,9 @@
 
 @media screen and (max-width: 499px) {
   .navbar_logo_type_content_inner_logo{
-    width: 100px;
+    width: 130px;
   }
   .fa_icon_type_navbar{
-    font-size: 21px;
+    font-size: 24px;
   }
 }
