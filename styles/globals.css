@@ -59,3 +59,9 @@ table {
 	  padding: 20px 0px !important;
 	}
 }
+
+@media screen and (max-width: 1085px) {
+	.paddingHomeCenter {
+	  padding: 20px 50px !important;
+	}
+}

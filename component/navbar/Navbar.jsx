@@ -17,7 +17,8 @@ export default function Navbar({ children }) {
   const [ToglleNav, SetToglleNav] = useState(false);
 
   const ChangeActiveLink = (activeLink) => {
-    setActive(activeLink);
+    setActive(activeLink),
+    SetToglleNav(false)
     console.log(active);
   };
 

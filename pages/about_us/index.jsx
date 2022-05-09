@@ -25,7 +25,7 @@ function About() {
         />
       </Head>
       <TopFunct />
-      <div className={`${style.firstAbout}`}>
+      <div className={`${style.firstAbout} paddingHomeCenter`}>
         <div className={`${style.firstAbouttext}`}>
           <div className={`${style.firstAboutBig}`}>We empower</div>
           <div className={`${style.firstAboutBig}`}>small retail to</div>
