@@ -70,8 +70,9 @@ export default function Navbar({ children }) {
                   </Link>
                 </li>
                 <li className="nav_item">
-                  <Link href="/tracking">
                     <a
+                      href="https://www.xpressrun.com/tracking"
+                      target="_blank"
                       onClick={() => ChangeActiveLink("tracking")}
                       className={`${
                         active === "tracking"
@@ -81,7 +82,6 @@ export default function Navbar({ children }) {
                     >
                       Tracking
                     </a>
-                  </Link>
                 </li>
                 <li className={`${style.drop_down_company}`}>
                     <a
@@ -145,9 +145,7 @@ export default function Navbar({ children }) {
                 </Link>
               </div>
             ) : (
-              <Link href="/business/signup">
-                <a className={`${style.get_started_btn}`}>Get Started</a>
-              </Link>
+                <a href="https://www.xpressrun.com/business/signup" className={`${style.get_started_btn}`}>Get Started</a>
             )}
             <label htmlFor="BURGER" onClick={() => SetToglleNav(!ToglleNav)}>
               {!ToglleNav ? (
