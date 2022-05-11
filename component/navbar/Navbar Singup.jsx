@@ -37,7 +37,7 @@ export default function Navbar({ children }) {
           <div className={`${style.burger_Navbar}`}>
             {keycloak ? (
               <div className="">
-                <Link href="/business" className={`logged nav_item`}>
+                <a href={`${process.env.D_URL}`} className={`logged nav_item`}>
                   <span>
                     &nbsp;
                     <a>Dashboard</a>
@@ -45,10 +45,10 @@ export default function Navbar({ children }) {
                   <span>
                     <i className="fa fa-chevron-right"></i>
                   </span>
-                </Link>
+                </a>
               </div>
             ) : (
-                <Link href="https://www.xpressrun.com/business" ><a className={`${style.get_started_btn3}`}>Sing In</a></Link>
+                <a href={`${process.env.D_URL}`} ><span className={`${style.get_started_btn3}`}>Sign In</span></a>
             )}
           </div>
         </div>

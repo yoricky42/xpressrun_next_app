@@ -71,7 +71,7 @@ export default function Navbar({ children }) {
                 </li>
                 <li className="nav_item">
                     <a
-                      href="https://www.xpressrun.com/tracking"
+                      href={`${process.env.D_URL}/tracking`}
                       target="_blank"
                       onClick={() => ChangeActiveLink("tracking")}
                       className={`${
@@ -137,7 +137,7 @@ export default function Navbar({ children }) {
           <div className={`${style.burger_Navbar}`}>
             {keycloak ? (
               <div className="">
-                <Link href="/business" className={`logged nav_item`}>
+                <a href={`${process.env.D_URL}/tracking`} className={`logged nav_item`}>
                   <span>
                     &nbsp;
                     <a>Dashboard</a>
@@ -145,7 +145,7 @@ export default function Navbar({ children }) {
                   <span>
                     <i className="fa fa-chevron-right"></i>
                   </span>
-                </Link>
+                </a>
               </div>
             ) : (
                 <Link href="/signup" ><a className={`${style.get_started_btn}`}>Get Started</a></Link>
