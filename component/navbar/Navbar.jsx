@@ -1,5 +1,5 @@
 // import { useKeycloak } from "@react-keycloak/web";
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/Assets/home/Logo H White Transparent.png";
@@ -13,8 +13,12 @@ import {
 
 export default function Navbar({ children }) {
   const [active, setActive] = useState("");
-  const { keycloak, setkeycloak } = useState(true);
   const [ToglleNav, SetToglleNav] = useState(false);
+  const [isAuth, setAuth]=useState()
+
+  useEffect(() => {
+    setAuth(localStorage.getItem('token'))
+  }, [])
 
   const ChangeActiveLink = (activeLink) => {
     setActive(activeLink),
@@ -135,12 +139,12 @@ export default function Navbar({ children }) {
             </div>
           </div>
           <div className={`${style.burger_Navbar}`}>
-            {keycloak ? (
-              <div className="">
-                <a href={`${process.env.D_URL}/tracking`} className={`logged nav_item`}>
+            {isAuth ? (
+              <div className="logged nav_item">
+                <a href={process.env.D_URL} className={``}>
                   <span>
                     &nbsp;
-                    <a>Dashboard</a>
+                    Dashboard
                   </span>
                   <span>
                     <i className="fa fa-chevron-right"></i>
