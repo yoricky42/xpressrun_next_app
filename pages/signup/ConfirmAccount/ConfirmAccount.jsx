@@ -1,5 +1,5 @@
 import React from "react";
-import "./ConfirmAccount.css";
+import "./ConfirmAccount.module.css";
 function ConfirmAccount({ email, resend, loading }) {
 	return (
 		<div className='Section-Principale'>

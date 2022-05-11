@@ -16,23 +16,23 @@ export default function Signin({ location }) {
 	// const { keycloak, initialized } = useKeycloak();
 
 	useEffect(() => {
-		if (location?.search) {
-			const f_arr = new URLSearchParams(location.search).get("full_name").split(' ')
-			const lastName = f_arr.pop()
-			const firstName = f_arr.toString()
-			setData({
-				...data,
-				name: new URLSearchParams(location.search).get("company_name"),
-				email: new URLSearchParams(location.search).get("email"),
-				token: new URLSearchParams(location.search).get("token"),
-				firstName: firstName,
-				lastName: lastName
-			});
-			localStorage.setItem(
-				"plugin_token",
-				new URLSearchParams(location.search).get("token")
-			);
-		}
+		// if (location?.search) {
+		// 	const f_arr = new URLSearchParams(location.search).get("full_name").split(' ')
+		// 	const lastName = f_arr.pop()
+		// 	const firstName = f_arr.toString()
+		// 	setData({
+		// 		...data,
+		// 		name: new URLSearchParams(location.search).get("company_name"),
+		// 		email: new URLSearchParams(location.search).get("email"),
+		// 		token: new URLSearchParams(location.search).get("token"),
+		// 		firstName: firstName,
+		// 		lastName: lastName
+		// 	});
+		// 	localStorage.setItem(
+		// 		"plugin_token",
+		// 		new URLSearchParams(location.search).get("token")
+		// 	);
+		// }
 	}, []);
 
 	let [errors, setErrors] = useState({
