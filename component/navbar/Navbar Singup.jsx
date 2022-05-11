@@ -48,7 +48,7 @@ export default function Navbar({ children }) {
                 </a>
               </div>
             ) : (
-                <a href={`${process.env.D_URL}`} ><span className={`${style.get_started_btn3}`}>Sign In</span></a>
+                <a href={process.env.D_URL} ><span className={`${style.get_started_btn3}`}>Sign In</span></a>
             )}
           </div>
         </div>
