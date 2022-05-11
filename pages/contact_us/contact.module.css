@@ -155,6 +155,9 @@
     .contactusContainer{
         padding: 0 50px ;
     }
+    .principalContact{
+        padding-top: 80px;
+    }
 }
 @media screen and (max-width:560px) {
     .contactusContainer{

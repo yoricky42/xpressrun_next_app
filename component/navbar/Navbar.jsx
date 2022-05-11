@@ -128,6 +128,9 @@ export default function Navbar({ children }) {
                     </div>
                   </div>
                 </li>
+                <li className={`${style.drop_down_company}`}>
+                <Link href="/signup" ><a className={`${style.get_started_btn2}`}>Get Started</a></Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -145,7 +148,7 @@ export default function Navbar({ children }) {
                 </Link>
               </div>
             ) : (
-                <a href="https://www.xpressrun.com/business/signup" className={`${style.get_started_btn}`}>Get Started</a>
+                <Link href="/signup" ><a className={`${style.get_started_btn}`}>Get Started</a></Link>
             )}
             <label htmlFor="BURGER" onClick={() => SetToglleNav(!ToglleNav)}>
               {!ToglleNav ? (

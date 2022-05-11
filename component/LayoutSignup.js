@@ -1,12 +1,10 @@
-import Navbar from "./navbar/Navbar"
-import Footer from "./footer/Footer"
+import Navbar from "./navbar/Navbar Singup"
 
 function Layout({ children }) {
     return (
       <>
         <Navbar/>
         <main>{children}</main>
-        <Footer />
       </>
     )
   }

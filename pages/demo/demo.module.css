@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;700&display=swap');
+
+.demoContainer{
+  background: #181818;
+  padding: 160px 0;
+}
+
+.firstDemo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+}
+
+.firstDemotext {
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom:50px;
+}
+
+.calendly {
+  background-color: #181818;
+}
+
+
+.firstDemoBig {
+  font-weight: bold;
+  font-size: 62px;
+  display: inline-block;
+}
+
+.firstSmall {
+  width: 100%;
+  color: #BDBDBD;
+}
+
+.firstDemoBig {
+  font-weight: bold;
+  font-size: 62px;
+}
+
+.firstDemoSmall {
+  width: 80%;
+}
+
+
+
+
+@media screen and (max-width:1086px) {
+  .demoContainer{
+    background: #181818;
+    padding: 80px 0;
+}
+  .firstDemoBig{
+    font-size: 7vw;
+  }
+}

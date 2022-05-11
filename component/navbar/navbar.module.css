@@ -124,6 +124,37 @@
   padding: 0 !important;
 }
 
+.get_started_btn2{
+  height: 100%;
+  min-height: 30px;
+  color: #000;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 400;
+  width: max-content;
+  background-color: #ffdd29;
+  margin-top: 10px;
+  display: none;
+}
+
+.get_started_btn3{
+  height: 100%;
+  min-height: 30px;
+  color: #000;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 400;
+  width: max-content;
+  background-color: #ffdd29;
+  margin-top: 10px;
+}
+
 .get_started_btn {
   height: 100%;
   color: #000;
@@ -161,6 +192,9 @@
   }
   .drop_down_company_dropdown::after{
     display: none;
+  }
+  .get_started_btn2{
+    display: flex;
   }
   .nav_bar_link_type {
     flex-direction: column;
