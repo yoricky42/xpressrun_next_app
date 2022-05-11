@@ -8,7 +8,7 @@ import validator from "validator";
 import Link  from "next/link";
 import Image from "next/image"
 import NumberFormat from "react-number-format";
-import style from  "./Signup.module.css";
+import style from  "./signup.module.css";
 
 export default function Signin({ location }) {
 	const [loading, setLoading] = useState(false);
