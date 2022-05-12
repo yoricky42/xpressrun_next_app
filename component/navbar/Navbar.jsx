@@ -69,7 +69,6 @@ export default function Navbar({ children }) {
 									<li className='nav_item'>
 										<a
 											href={`${process.env.D_URL}/tracking`}
-											target='_blank'
 											onClick={() => ChangeActiveLink("tracking")}
 											className={`${
 												active === "tracking"
