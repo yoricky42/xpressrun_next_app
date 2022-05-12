@@ -132,7 +132,7 @@ export default function Navbar({ children }) {
 							{isAuth ? (
 								<a
 									className={isAuth && "d-none"}
-									href={`${process.env.D_URL}/dashboard`}>
+									href={`${process.env.D_URL}`}>
 									<span>Dashboard</span>
 									<span>
 										<i className='fa fa-chevron-right'></i>
