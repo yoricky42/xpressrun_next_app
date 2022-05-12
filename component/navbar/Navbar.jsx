@@ -1,4 +1,3 @@
-// import { useKeycloak } from "@react-keycloak/web";
 import { React, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,7 +19,6 @@ export default function Navbar({ children }) {
 
 	const ChangeActiveLink = (activeLink) => {
 		setActive(activeLink), SetToglleNav(false);
-		console.log(active);
 	};
 
 	return (
@@ -130,15 +128,17 @@ export default function Navbar({ children }) {
 					</div>
 					<div className={`${style.burger_Navbar}`}>
 						{isAuth ? (
-							<a href={`${process.env.D_URL}`}>
+							<Link href={`${process.env.D_URL}`}>
+							<a >
 								<span>Dashboard</span>
 								<span>
 									<i className='fa fa-chevron-right'></i>
 								</span>
-							</a>
+							</a></Link>
+							
 						) : (
 							<Link href='/signup'>
-								<span className={`${style.get_started_btn}`}>Get Started</span>
+								<a className={`${style.get_started_btn}`}>Get Started</a>
 							</Link>
 						)}
 						<label htmlFor='BURGER' onClick={() => SetToglleNav(!ToglleNav)}>
