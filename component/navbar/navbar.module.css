@@ -58,6 +58,7 @@
 
 .drop_down_company{
   position: relative;
+  cursor: pointer;
 }
 
 .drop_down_company:hover .drop_down_company_dropdown{
@@ -228,11 +229,10 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
-    padding:10px 10px;
+    padding:15  px 20px;
   }
   .drop_down_company_dropdown{
     position: relative;
@@ -245,7 +245,13 @@
     height: max-content;
     border-left: 1px solid rgba(238, 238, 238, 0.199);
     margin-left: 20px;
-
+  }
+  .drop_down_company_dropdown div{
+    height: 0;
+    transition: .2s;
+  }
+  .drop_down_company:hover .drop_down_company_dropdown div{
+    height: max-content;
   }
   .drop_down_company_dropdown::before{
     display: none;
@@ -273,9 +279,9 @@
 
 @media screen and (max-width: 499px) {
   .navbar_logo_type_content_inner_logo{
-    width: 130px;
+    width: 30vw;
   }
   .fa_icon_type_navbar{
-    font-size: 24px;
+    font-size: 6vw;
   }
 }

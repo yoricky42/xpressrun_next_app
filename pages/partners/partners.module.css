@@ -45,6 +45,9 @@
     padding-top: 70px !important;
     padding-bottom: 70px !important;
 }
+.DriverSection1_subtitle{
+    line-height: 1.4;
+}
 
 .DriverSection1Element{
     color: #fff;
@@ -437,6 +440,9 @@
     }
     .DriverSection1Titre {
         font-size: 7vw;
+    }
+    .DriverSection1Titre{
+        padding-top: 50px;
     }
     .Driver-input-numero {
         font-size: 3vw;

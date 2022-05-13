@@ -74,6 +74,7 @@
 .form_container_contactUs .info {
     margin-right: 0;
 }
+
 .form_container_contactUs .info .title{
     font-weight: 400;
     font-size: 17px;
@@ -100,7 +101,26 @@
     font-family: "Work Sans",sans-serif;
     font-size: 16px;
     color: rgb(87, 87, 87);
+    -webkit-appearance: none;
 }
+
+.custSelect{
+    position: relative;
+}
+
+.form_container_contactUs .custSelect::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid grey;
+    pointer-events: none;
+  }
 
 .form_container_contactUs textarea{
     padding: 8px;
@@ -116,6 +136,7 @@
 .submitBtnFormContact{
     width: max-content;
     padding: 15px 20px;
+    color:#181818;
     background-color: #FFDD29;
     border-radius: 10px;
     margin: 10px 0;

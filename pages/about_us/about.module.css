@@ -125,7 +125,8 @@
     width: 100%;
   }
   .firstAboutLigneBottom{
-    width: 80%;
+    width:100%;
+    max-width: 200px;
     height: 17px;
     background-color: #FFDD29;
     margin: 20px 0;

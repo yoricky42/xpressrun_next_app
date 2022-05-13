@@ -38,9 +38,8 @@
 
 .businessPart1BussinessTitleBig {
   font-size: 60px;
-  line-height: 1.2;
+  line-height: 1.1;
   font-weight: bold;
-  margin-top: 3vw;
 }
 .businessPart1BusinnesSubtitle {
   font-size: 14px;
@@ -183,14 +182,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:100px 130px;
+  margin: 100px 0;
+  gap: 50px;
 }
 
-.retailersASectionSection{
-  width: 45%;
+.retailersASectionLast{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.retailersASectionSection p{
-  line-height: 1.3;
+
+
+.retailersASectionSection{
+  width: 100%;
+  max-width: 550px;
+}
+.retailersSectionSectionSubtitle{
+  line-height: 1.4;
 }
 .retailersASectionImg{
   width: 35%;
@@ -219,6 +227,7 @@
 }
 .lastSection{
   width: 100% !important;
+  max-width: 100%;
   text-align: center;
 }
 .alignToutColum{
@@ -253,20 +262,37 @@
   }
 }
 
-
-@media screen and (max-width: 1212px) {
-  .businessPart1_partenerLogos {
-    padding: 50px 10px !important;
-  }
-  .businessPart1ImageDashboard {
-    width: 75%;
-  }
+@media screen and (max-width: 968px) {
   .retailersASection,.businessPart1{
     flex-direction: column-reverse;
   }
   .reverse {
     flex-direction: column!important;
   }
+  .retailersASection{
+    margin: 1vw 0;
+  }
+  
+}
+
+
+@media screen and (max-width: 1212px) {
+  .businessPart1{
+    flex-direction: column;
+    margin-top: 90px;
+  }
+  .businessPart1_partenerLogos {
+    padding: 50px 10px !important;
+  }
+  .businessPart1ImageDashboard {
+    width: 75%;
+  }
+  /* .retailersASection,.businessPart1{
+    flex-direction: column-reverse;
+  } */
+  /* .reverse {
+    flex-direction: column!important;
+  } */
   .businessPart1ContenuDeTexte{
     text-align: center;
   }
@@ -318,7 +344,7 @@
     width: 75%;
   }
   .businessPart1BussinessTitleBig {
-    font-size: 9vw;
+    font-size: 8vw;
     line-height: 1;
     font-weight: bold;
     margin: 4vw 0;

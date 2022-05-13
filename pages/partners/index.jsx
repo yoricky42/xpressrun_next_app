@@ -34,8 +34,10 @@ function partners() {
             <div>Unified last-mile to </div>
             <div>empower local brands.</div>
           </div>
+          <div className={`${style.DriverSection1_subtitle}`}>
           <div>Join hundreds of delivery providers around the globe with a</div>
           <div>shared mission of helping local retail thrive.</div>
+          </div>
           <div className={`${style.DriverButtonDrive}`}>
             <a href="#">Join our network</a>
           </div>
@@ -133,9 +135,9 @@ function partners() {
         </div>
       </div>
       <div className={`${style.lastAboutAbout}`}>
-        <h2 className={`${style.lastAboutAboutTitle}`}>
+        <h1 className={`${style.lastAboutAboutTitle}`}>
           Last-mile partners include
-        </h2>
+        </h1>
         <div className={`${style.lastAboutCards}`}>
           <div className={`${style.lastAboutCard}`}>
             <p className={`${style.lastAboutCardTitle}`}>Roadie</p>

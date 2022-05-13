@@ -6,6 +6,9 @@
   list-style: none;
   text-decoration: none;
 }
+.widthCent{
+  width: 100%;
+}
 .demo {
   color: white;
   font-weight: bold;
@@ -709,7 +712,9 @@
   }
   .shpoopifyCard {
     margin-left: 0;
-    width: 100%;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
   }
   .affordableCard {
     width: 100%;
@@ -791,26 +796,20 @@
   .homeSeaderSontentSelect {
     font-size: 2.5vw;
   }
-  .homeHeaderContentSelectAndOthers{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-}
 .selectBox {
   color: #181818;
-  font-weight: bold;
   pointer-events: none;
   font-size: 15px;
 }
 .homeHeaderContentSelect select {
-
   z-index: 0;
-  padding: 10px;
   padding-right: 10px;
   padding-left: 10px;
   -webkit-appearance: none;
+  font-size: 4vw;
+}
+.demo{
+  font-size: 4vw
 }
   .homeHeaderContentSelectAndOthers {
     width: 100%;
@@ -824,9 +823,6 @@
   .Driver-section3-text-app-buttons-button-container {
     max-width: 100%;
     width: 100%;
-  }
-  .paddingHomeCenter {
-    padding: 30px 10px !important;
   }
   .homeHeaderText {
     font-size: 10vw;
@@ -865,7 +861,7 @@
     font-size: 6vw;
     text-align: center;
     line-height: 1;
-    margin-bottom: 15px !important;
+    margin-bottom: 10px !important;
   }
   .affordableCardPart {
     width: 95%;

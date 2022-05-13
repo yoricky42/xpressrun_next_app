@@ -147,20 +147,18 @@ function Business() {
         </div>
       </InView>
 
-      <div className={`${style.retailersASection}`}>
+      <div className={`${style.retailersASection} paddingHomeCenter`}>
         <div className={`${style.retailersASectionSection}`}>
           <div className={`${style.businessPart1BussinessTitleBig}`}>
             <p>Instant plug and </p>
             <p>play integration</p>
           </div>
-          <div className="">
-            <p>
-              XpressRun integrates directly to your online store. Regardless of
-              whether you’re using an e-commerce platform (ex. Shopify) or
-              custom built - get started in just a few clicks without having to
-              write a single line of code.
-            </p>
-          </div>
+          <p className={`${style.retailersSectionSectionSubtitle}`}>
+            XpressRun integrates directly to your online store. Regardless of
+            whether you’re using an e-commerce platform (ex. Shopify) or custom
+            built - get started in just a few clicks without having to write a
+            single line of code.
+          </p>
         </div>
         <div
           className={`${style.retailersASectionImgEcomContainer} ${style.retailersASectionImg}`}
@@ -174,7 +172,7 @@ function Business() {
         </div>
       </div>
 
-      <div className={`${style.retailersASection} ${style.reverse}`}>
+      <div className={`${style.retailersASection} ${style.reverse} paddingHomeCenter`}>
         <div className={`${style.retailersASectionImg}`}>
           <Image src={provider} alt="" />
         </div>
@@ -183,31 +181,27 @@ function Business() {
             <p>Instant access to </p>
             <p>2.5 millions couriers</p>
           </div>
-          <div className="">
-            <p>
-              Our nationwide Same-Day delivery network allows you to grow
-              without limits. Our algorithm compares & detects the quickest and
-              most affordable option from our providers within the checkout, and
-              quotes the cost directly to the customer.
-            </p>
-          </div>
+          <p className={`${style.retailersSectionSectionSubtitle}`}>
+            Our nationwide Same-Day delivery network allows you to grow without
+            limits. Our algorithm compares & detects the quickest and most
+            affordable option from our providers within the checkout, and quotes
+            the cost directly to the customer.
+          </p>
         </div>
       </div>
 
-      <div className={`${style.retailersASection}`}>
+      <div className={`${style.retailersASection} paddingHomeCenter`}>
         <div className={`${style.retailersASectionSection}`}>
           <div className={`${style.businessPart1BussinessTitleBig}`}>
             <p>Your brand from</p>
             <p>start to finish</p>
           </div>
-          <div className="">
-            <p>
-              XpressRun allows you to own the entire last-mile delivery
-              experience- from checkout to your customers’ doorstep. Create
-              beautiful branded tracking pages, shipping labels, and text
-              communications that resonates with your customers.
-            </p>
-          </div>
+          <p className={`${style.retailersSectionSectionSubtitle}`}>
+            XpressRun allows you to own the entire last-mile delivery
+            experience- from checkout to your customers’ doorstep. Create
+            beautiful branded tracking pages, shipping labels, and text
+            communications that resonates with your customers.
+          </p>
         </div>
         <div className={`${style.retailersASectionImg}`}>
           <div className={`${style.retailersASectionImgTracking}`}>
@@ -216,13 +210,13 @@ function Business() {
         </div>
       </div>
 
-      <div className={`${style.retailersASection}`}>
+      <div className={`${style.retailersASectionLast}`}>
         <div
           className={`${style.retailersASectionSection} ${style.lastSection}`}
         >
           <div className={`${style.businessPart1BussinessTitleBig}`}>
-            <p>Are you ready to grow your</p>
-            <p>business with us?</p>
+            <div>Are you ready to grow your</div>
+            <div>business with us?</div>
           </div>
           <div className={`${style.alignToutColum}`}>
             <p>We’d love to learn more about your brand.</p>

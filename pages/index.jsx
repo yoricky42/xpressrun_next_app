@@ -62,7 +62,7 @@ function Home() {
       <TopFunct />
       {/* <Navbar active="home" /> */}
       <div className={`${style.homeHeaderContent} ${style.paddingHomeCenter}`}>
-        <div>
+        <div className={`${style.widthCent}`}>
           <div className={style.homeHeaderContentFirstPart}>
             <div>
               <div className={style.homeHeaderText}>
@@ -86,7 +86,7 @@ function Home() {
             </div>
           </div>
           <div className={style.homeHeaderContentSelectAndOthers}>
-            <Link href="#">
+            <Link href="/signup">
               <a>
                 <div className={style.homeHeaderContentSelect}>
                   <select className={style.selectBox}>

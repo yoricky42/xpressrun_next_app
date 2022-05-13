@@ -13,9 +13,7 @@ export default ()=>{
 	};
     return(
         <div className={styles.buttonTop} onClick={()=>scrollToTop()}>
-			<div className={`${styles.TOPIMGE}`}>
 				<Image src={Top} />
-			</div>
 		</div>
     )
 }

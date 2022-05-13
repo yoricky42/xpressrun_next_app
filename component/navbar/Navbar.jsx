@@ -26,7 +26,7 @@ export default function Navbar({ children }) {
 		!loading && (
 			<div id='Header'>
 				<div>
-					<div className={`${style.navbar} ${style.NAVBARTYPE}`}>
+					<div className={`${style.navbar} ${style.NAVBARTYPE} paddingHomeCenter`}>
 						<div className={`${style.navbar_logo_type_content}`}>
 							<a
 								href='/'

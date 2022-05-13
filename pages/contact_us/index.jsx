@@ -194,6 +194,7 @@ function Contact() {
               <div className={`${style.container_info}`}>
                 <div className={`${style.info}`}>
                   <div className={`${style.title}`}>Contact reason</div>
+                  <div className={`${style.custSelect}`}>
                   <select name="help" type="select">
                     <option value={0} name={0}>
                       How can we help you
@@ -206,6 +207,7 @@ function Contact() {
                       );
                     })}
                   </select>
+                  </div>
                 </div>
               </div>
               <div className={`${style.container_info}`}>
