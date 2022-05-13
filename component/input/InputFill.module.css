@@ -1,7 +1,7 @@
 .SelectCompCust select{
     -webkit-appearance: none;
     position: relative;
-    background-color: none;
+    background-color: transparent;
     color: #181818;
 }
 
