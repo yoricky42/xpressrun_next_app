@@ -121,7 +121,7 @@ export default function Navbar({ children }) {
 									</li>
 									<li className={`${style.drop_down_company}`}>
 										<a
-											href={`/signup`}
+											href={`${process.env.D_URL}`}
 											className={`${style.get_started_btn2}`}>
 											Get Started
 										</a>
@@ -131,7 +131,7 @@ export default function Navbar({ children }) {
 						</div>
 						<div className={`${style.burger_Navbar}`}>
 							<a
-								href={`/signup`}
+								href={`${process.env.D_URL}`}
 								className={`${style.get_started_btn}`}>
 								Get Started
 							</a>
