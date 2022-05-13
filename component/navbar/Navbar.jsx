@@ -130,7 +130,6 @@ export default function Navbar({ children }) {
 						<div className={`${style.burger_Navbar}`}>
 							{isAuth ? (
 								<a
-									className={isAuth && "d-none"}
 									href={`${process.env.D_URL}`}>
 									<span>Dashboard</span>
 									<span>

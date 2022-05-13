@@ -17,9 +17,9 @@ export default function Navbar({ children }) {
 						</Link>
 					</div>
 					<div className={`${style.burger_Navbar}`}>
-						<Link href={process.env.D_URL}>
-							<a className={`${style.get_started_btn3}`}>Sign In</a>
-						</Link>
+						<a 	href={`${process.env.D_URL}`} className={`${style.get_started_btn3}`}>
+							Sign In
+						</a>
 					</div>
 				</div>
 			</div>
