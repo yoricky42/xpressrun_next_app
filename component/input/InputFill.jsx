@@ -2,6 +2,9 @@ import { useState } from "react";
 import PhoneInput from "react-number-format";
 import style from "./InputFill.module.css"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+
 export const InputFill = ({
 	onChange,
 	name,
@@ -79,7 +82,7 @@ export const InputFill = ({
 					className={classInput}
 				/>
 			) : type === "password" ? (
-				<div>
+				<div className={`${classInput} ${style.felxM}`}>
 					<input
 						name={name}
 						required={required}
@@ -89,12 +92,18 @@ export const InputFill = ({
 						disabled={disabled}
 						style={{ width: "100%", border: "none", outline: "none" }}
 						placeholder={placeholder}
-						className={classInput}
 						{...props}
 					/>
 					<span
-						class={`fa ${show ? "fa-eye" : "fa-eye-slash"}`}
-						onClick={() => setShow(!show)}></span>
+						onClick={() => setShow(!show)}
+					>
+						{
+							show ?
+							<FontAwesomeIcon icon={faEye} />
+							:
+							<FontAwesomeIcon icon={faEyeSlash} />
+						}
+					</span>
 				</div>
 			) : (
 				<input

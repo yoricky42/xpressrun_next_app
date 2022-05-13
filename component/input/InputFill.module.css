@@ -5,6 +5,12 @@
     color: #181818;
 }
 
+.felxM{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .SelectCompCust{
     position: relative;
 }
