@@ -258,6 +258,7 @@
 }
 .shpoopifyText {
   opacity: 1;
+  margin-bottom: 15px;
 }
 .shpoopifyTextOFF {
   opacity: 0;
