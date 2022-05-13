@@ -16,7 +16,7 @@ function About() {
     });
   }, []);
   return (
-    <div className={`${style.about} ALL_COMPONENT`}>
+    <div className={`${style.about}`}>
       <Head>
         <title>Xpressrun | Company</title>
         <meta

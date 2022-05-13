@@ -52,7 +52,7 @@ function Contact() {
   };
 
   return (
-    <div className={`${style.principalContact} ALL_COMPONENT`}>
+    <div className={`${style.principalContact}`}>
       <Head>
         <title>Xpressrun | Contact us</title>
         <meta
