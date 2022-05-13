@@ -8,7 +8,7 @@ export default function Navbar({ children }) {
 	return (
 		<div id='Header'>
 			<div>
-				<div className={`${style.navbar} ${style.NAVBARTYPE}`}>
+				<div className={`${style.navbar} ${style.NAVBARTYPE} paddingHomeCenter`}>
 					<div className={`${style.navbar_logo_type_content}`}>
 						<Link href='/'>
 							<a className={`${style.navbar_logo_type_content_inner_logo}`}>

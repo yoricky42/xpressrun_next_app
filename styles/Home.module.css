@@ -89,7 +89,6 @@
 }
 .homeHeaderContentSelect select {
   position: relative;
-  z-index: 2;
   background: transparent;
   border: none;
   width: max-content;

@@ -1,0 +1,22 @@
+.SelectCompCust select{
+    -webkit-appearance: none;
+    position: relative;
+}
+
+.SelectCompCust{
+    position: relative;
+}
+
+.SelectCompCust::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid grey;
+    pointer-events: none;
+  }

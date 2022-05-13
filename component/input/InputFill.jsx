@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PhoneInput from "react-number-format";
+import style from "./InputFill.module.css"
 
 export const InputFill = ({
 	onChange,
@@ -39,7 +40,7 @@ export const InputFill = ({
 					className={classInput}
 				/>
 			) : type === "select" ? (
-				<div>
+				<div className={`${style.SelectCompCust}`}>
 					<select
 						required
 						name={name}
