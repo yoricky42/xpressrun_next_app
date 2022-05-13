@@ -21,10 +21,10 @@ return (
       <div className={`${style.Title_footer_home}`}>LINKS</div>
       <div className={`${style.linksTitle_footer_home}`}>
         <Link href="/">Home</Link>
-        <Link href="/about">About us</Link>
+        <Link href="/about_us">About us</Link>
         <Link href="/retailers">Retailers</Link>
         <Link href="/partners">Partners</Link>
-        <Link href="/tracking">Tracking</Link>
+        <a href={`${process.env.D_URL}/tracking`}>Tracking</a>
         <Link href="/demo">Demo</Link>
       </div>
     </div>
