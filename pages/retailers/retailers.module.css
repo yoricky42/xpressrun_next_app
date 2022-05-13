@@ -311,14 +311,11 @@
   }
 }
 @media screen and (max-width: 652px) {
-  /* .businnesPart2ElementTitle{
-    font-size: 44px;
-    font-weight: bold;
-    color: #181818;
-    min-width: 100%;
-} */
+  .businnesPart2ElementTitle{
+    font-size: 48px;
+}
   .retailersASectionImg{
-    width: 80%;
+    width: 75%;
   }
   .businessPart1BussinessTitleBig {
     font-size: 9vw;
