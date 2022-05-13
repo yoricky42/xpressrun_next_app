@@ -5,10 +5,10 @@ import Head from "next/head";
 import { InView } from "react-intersection-observer";
 import Dashboard from "../../public/Assets/retailers/Integrations.png";
 import eCom from "../../public/Assets/retailers/eCom.png";
-import provider from "../../public/Assets/retailers/provider.svg";
+import provider from "../../public/Assets/retailers/provider.png";
 import xpressRun from "../../public/Assets/retailers/xpressRun.svg";
 import tracking from "../../public/Assets/retailers/tracking.jpg";
-import parterLogo from "../../public/Assets/retailers/partenerLogos.svg";
+import parterLogo from "../../public/Assets/retailers/partenerLogos.png";
 import TopFunct from "../../component/Top/top";
 import style from "./retailers.module.css";
 
@@ -210,7 +210,7 @@ function Business() {
         </div>
       </div>
 
-      <div className={`${style.retailersASectionLast}`}>
+      <div className={`${style.retailersASectionLast} paddingHomeCenter`}>
         <div
           className={`${style.retailersASectionSection} ${style.lastSection}`}
         >

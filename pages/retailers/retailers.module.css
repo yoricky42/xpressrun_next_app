@@ -278,7 +278,7 @@
 
 @media screen and (max-width: 1212px) {
   .businessPart1{
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 90px;
   }
   .businessPart1_partenerLogos {

@@ -32,7 +32,7 @@
 }
 
 .nav_link{
-  padding: 10px 20px;
+  padding: 15px 20px;
   display: block;
   font-weight: 300;
 }
@@ -137,7 +137,7 @@
   font-weight: 400;
   width: max-content;
   background-color: #ffdd29;
-  margin-top: 10px;
+  margin-top: 15px;
   display: none;
 }
 
@@ -153,7 +153,7 @@
   font-weight: 400;
   width: max-content;
   background-color: #ffdd29;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .get_started_btn {
