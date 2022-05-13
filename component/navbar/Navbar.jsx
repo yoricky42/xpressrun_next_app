@@ -72,7 +72,6 @@ export default function Navbar({ children }) {
                 <li className="nav_item">
                     <a
                       href="https://www.xpressrun.com/tracking"
-                      target="_blank"
                       onClick={() => ChangeActiveLink("tracking")}
                       className={`${
                         active === "tracking"
