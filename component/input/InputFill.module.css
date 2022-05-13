@@ -1,6 +1,8 @@
 .SelectCompCust select{
     -webkit-appearance: none;
     position: relative;
+    background-color: none;
+    color: #181818;
 }
 
 .SelectCompCust{
