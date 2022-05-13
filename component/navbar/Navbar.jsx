@@ -120,27 +120,22 @@ export default function Navbar({ children }) {
 										</div>
 									</li>
 									<li className={`${style.drop_down_company}`}>
-										<Link href='/signup'>
-											<a className={`${style.get_started_btn2}`}>Get Started</a>
-										</Link>
+										<a
+											href={`${process.env.D_URL}/signup`}
+											className={`${style.get_started_btn2}`}>
+											Get Started
+										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 						<div className={`${style.burger_Navbar}`}>
-							{isAuth ? (
-								<a
-									href={`${process.env.D_URL}`}>
-									<span>Dashboard</span>
-									<span>
-										<i className='fa fa-chevron-right'></i>
-									</span>
-								</a>
-							) : (
-								<Link href='/signup'>
-									<a className={`${style.get_started_btn}`}>Get Started</a>
-								</Link>
-							)}
+							<a
+								href={`/signup`}
+								className={`${style.get_started_btn}`}>
+								Get Started
+							</a>
+
 							<label htmlFor='BURGER' onClick={() => SetToglleNav(!ToglleNav)}>
 								{!ToglleNav ? (
 									<span className={`${style.fa_icon_type_navbar}`}>

@@ -1,14 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
 import MyButton from "../../component/bouton/Button";
 import tracking from "../../public/Assets/singup/tracking.png";
-import { InputFill } from "../../component/input/InputFill";
+import {InputFill} from "../../component/input/InputFill"
 import component18 from "../../public/Assets/singup/Component18.png";
 import validator from "validator";
 // import ConfirmAccount from "./ConfirmAccount/ConfirmAccount";
-import Link from "next/link";
-import Image from "next/image";
+import Link  from "next/link";
+import Image from "next/image"
 import NumberFormat from "react-number-format";
-import style from "./signup.module.css";
+import style from  "./signup.module.css";
 
 export default function Signin({ location }) {
 	const [loading, setLoading] = useState(false);
@@ -87,6 +87,7 @@ export default function Signin({ location }) {
 
 	const handleSubmit = async () => {
 		// setLoading(true);
+
 		// await sendData("businesses/public/create-account", {
 		// 	name: data.name,
 		// 	category: data.category,
@@ -119,6 +120,7 @@ export default function Signin({ location }) {
 		// 			setErrors(apiErros);
 		// 		}
 		// 	});
+
 		// setLoading(false);
 	};
 
@@ -138,7 +140,7 @@ export default function Signin({ location }) {
 							<div
 								className={`${style.formFlowSlider}`}
 								// ref={(el) => (formFlowSlider = el)}
-							>
+								>
 								<div className={`${style.flexingColumn}`}>
 									<div className={`${style.card_title}`}>
 										<div className={`${style.card_title_title}`}>
@@ -146,42 +148,41 @@ export default function Signin({ location }) {
 										</div>
 										<div className={`${style.card_title_sub}`}>
 											Already have an account?{" "}
-											<a href={`${process.env.D_URL}`}>Log in</a>
-										</div>
+											<a href={process.env.D_URL}>Log in</a>
+										</div>{" "}
 									</div>
 									<div className={`${style.InputOnFormContainer}`}>
-										<div
-											className={`${style.firstAndLast_input_container} ${style.inputInFromContainerKkd}`}>
-											<div className={``}>
-												<InputFill
-													name='firstName'
-													type='text'
-													value={data.firstName}
-													onChange={handleChange}
-													error={errors.firstName}
-													required
-													placeholder='First name'
-													label='First name'
-													classInput={`${style.storeFormInputForme_Input}`}
-													classLabel={`${style.storeFormInputForme_Label}`}
-												/>
-											</div>
-											<div className={``}>
-												<InputFill
-													name='lastName'
-													type='text'
-													value={data.lastName}
-													onChange={handleChange}
-													error={errors.lastName}
-													required
-													placeholder='Last name'
-													label='Last name'
-													classInput={`${style.storeFormInputForme_Input}`}
-													classLabel={`${style.storeFormInputForme_Label}`}
-												/>
-											</div>
+										<div className={`${style.firstAndLast_input_container} ${style.inputInFromContainerKkd}`}>
+										<div className={``}>
+											<InputFill
+												name='firstName'
+												type='text'
+												value={data.firstName}
+												onChange={handleChange}
+												error={errors.firstName}
+												required
+												placeholder='First name'
+												label='First name'
+												classInput={`${style.storeFormInputForme_Input}`}
+												classLabel={`${style.storeFormInputForme_Label}`}
+											/>
 										</div>
-										<div className={`${style.inputInFromContainerKkd}`}>
+										<div className={``}>
+											<InputFill
+												name='lastName'
+												type='text'
+												value={data.lastName}
+												onChange={handleChange}
+												error={errors.lastName}
+												required
+												placeholder='Last name'
+												label='Last name'
+												classInput={`${style.storeFormInputForme_Input}`}
+												classLabel={`${style.storeFormInputForme_Label}`}
+											/>
+										</div>
+										</div>
+										<div  className={`${style.inputInFromContainerKkd}`}>
 											<InputFill
 												name='name'
 												type='text'
@@ -193,6 +194,7 @@ export default function Signin({ location }) {
 												label='Company name'
 												classInput={`${style.storeFormInputForme_Input}`}
 												classLabel={`${style.storeFormInputForme_Label}`}
+
 											/>
 										</div>
 										<div className={`${style.inputInFromContainerKkd}`}>
@@ -207,9 +209,10 @@ export default function Signin({ location }) {
 												label='Email'
 												classInput={`${style.storeFormInputForme_Input}`}
 												classLabel={`${style.storeFormInputForme_Label}`}
+
 											/>
 										</div>
-										<div className={`${style.inputInFromContainerKkd}`}>
+										<div  className={`${style.inputInFromContainerKkd}`}>
 											<InputFill
 												name='category'
 												value={data.category}
@@ -224,7 +227,7 @@ export default function Signin({ location }) {
 												classLabel={`${style.storeFormInputForme_Label}`}
 											/>
 										</div>
-										<div className={`${style.inputInFromContainerKkd}`}>
+										<div  className={`${style.inputInFromContainerKkd}`}>
 											<label className={`${style.storeFormInputForme_Label}`}>
 												Phone number
 											</label>
@@ -304,7 +307,8 @@ export default function Signin({ location }) {
 											}}>
 											Get started for FREE
 										</div>
-										<span style={{ fontSize: "15px", lineHeight: "1" }}>
+										<span
+											style={{ fontSize: "15px", lineHeight: "1" }}>
 											Save up to 50% off same day delivery rates with instant
 											access and no monthly fees, markup, or hidden costs.
 										</span>
@@ -312,10 +316,12 @@ export default function Signin({ location }) {
 								</div>
 								<div className={`${style.sliderImageForm_inner}`}>
 									<div className={`${style.BrandImageContainer}`}>
-										<div
-											className={`${style.component18} ${style.sliderImage}`}>
-											<Image src={component18} alt='' />
-										</div>
+									<div className={`${style.component18} ${style.sliderImage}`}>
+										<Image
+											src={component18}
+											alt=''
+										/>
+									</div>
 									</div>
 									<div className={`${style.brandImageTextBellow}`}>
 										<div
@@ -326,7 +332,9 @@ export default function Signin({ location }) {
 											}}>
 											Large delivery network
 										</div>
-										<span style={{ fontSize: "15px", lineHeight: "1" }}>
+										<span
+											
+											style={{ fontSize: "15px", lineHeight: "1" }}>
 											We provide instant access to hundreds of delivery
 											providers and millions of drivers around the world.{" "}
 										</span>
