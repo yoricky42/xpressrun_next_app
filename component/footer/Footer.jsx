@@ -31,8 +31,8 @@ return (
     <div className={`${style.legalfooter_home}`}>
       <div className={`${style.Title_footer_home}`}>LEGAL</div>
       <div className={`${style.legalsTitle_footer_home}`}>
-        <a href="#">Terms of use</a>
-        <a href="#">Terms of conditions</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Terms of Conditions</a>
         <Link href="/privacy">Privacy policy</Link>
         <a href="#">Cookie policy</a>
       </div>

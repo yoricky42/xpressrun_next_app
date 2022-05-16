@@ -437,7 +437,7 @@ function Home() {
               </p>
             </div>
             <div className={`${style.currentlyElementCard2}`}>
-              <p className={`${style.currentlyElementTextSmall}`}>Now on shopify</p>
+              <p className={`${style.currentlyElementTextSmall}`}>Now on Shopify</p>
               <div className={`${style.VectorArrow}`}>
                 <Image src={VectorArrow} alt=""/>
               </div>

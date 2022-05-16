@@ -86,10 +86,10 @@ function Business() {
             <div className={`${style.businessPart1BusinnesSubtitle}`}>
               <p>
                 Offer an utra-fast delivery experience to your customers while
-                maintaining
+                maintaining your brand
               </p>
               <p>
-                your from start to finish. Same-Day delivery directly from your
+                from start to finish. Same-Day delivery directly from your
                 website.
               </p>
             </div>

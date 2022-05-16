@@ -68,11 +68,7 @@ function Contact() {
           <div className={`${style.contactUs_leftSide_title}`}>
             hear from you
           </div>
-          <div className={`${style.contactUs_leftSide_Subtitle}`}>
-            Want to learn more about our fully automated same-day delivery
-            platform? Submit this form and our sales representative will contact
-            you soon.
-          </div>
+          <div className={`${style.contactUs_leftSide_Subtitle}`}>Want to learn more about our fully automated same-day delivery platform? Submit this form and our sales representative will contact you soon.</div>
           <div className={`${style.contactUs_leftSide_line}`}></div>
           <div className={`${style.contactUs_leftSide_contact}`}>
             <div className={`${style.title}`}>Contact</div>

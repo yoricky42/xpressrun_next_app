@@ -47,7 +47,6 @@
     margin: 20px 0 ;
     font-size: 1.2rem;
     width: 75%;
-    text-align: justify;
     font-weight: 300;
 }
 .contactUs_leftSide_line{
@@ -93,12 +92,11 @@
 
 .form_container_contactUs .info input, .form_container_contactUs .info select{
     padding: 15px;
-    border: 1px solid #ffffff !important;
+    border: 1px solid #fff !important;
     border-radius: 7px;
     background-color: #eeeeee;
     outline: none;
     font-weight: 400;
-    font-family: "Work Sans",sans-serif;
     font-size: 16px;
     color: rgb(87, 87, 87);
     -webkit-appearance: none;
@@ -177,7 +175,7 @@
         padding: 0 50px ;
     }
     .principalContact{
-        padding-top: 80px;
+        padding-top: 90px;
     }
 }
 @media screen and (max-width:560px) {

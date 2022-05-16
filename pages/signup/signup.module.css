@@ -15,7 +15,7 @@
   position: relative;
   width: 100%;
   padding: 140px 0;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background: #181818;  
   overflow: auto;
 }
@@ -24,7 +24,7 @@
   height: max-content;
   overflow: auto;
   margin-bottom: 30px;
-  border-radius: 15px !important;
+  border-radius: 15px;
   background-color: #ffff;
   overflow-x: hidden;
   padding: 35px;
@@ -82,7 +82,9 @@
   border-radius: 4px;
   border: 1px solid #d8d8d8;
   outline: none;
-
+}
+.storeFormInputForme_Input input{
+  font-size: 16px;
 }
 .storeFormInputForme_Label{
   font-weight: bold;
@@ -111,6 +113,9 @@
   border: 1px solid #d8d8d8;
   outline: none;
   -webkit-appearance: none;
+}
+.InputFill_sign_typeNUM input{
+  font-size: 16px;
 }
 .paddingSingUpForm{
   padding:0 20px;
@@ -148,7 +153,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 10px;
 }
 .backbackback{
   transform: rotate(180deg);
@@ -299,16 +303,20 @@ margin: 3px 0;
   .b2c_login_container{
     position: relative;
     width: 100%;
-    padding: 75px 0;
+    padding-top: 80px;
     overflow: auto;
 }
   .card {
     height: 100%;
     width: 100%;
     margin: 0;
+    border-radius: 0;
   }
   .sliderImageForm{
    display: none;
+  }
+  .b2c_login_container{
+    padding-bottom: 0px;
   }
 }
 
