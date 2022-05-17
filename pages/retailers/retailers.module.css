@@ -33,11 +33,13 @@
 }
 .businessPart1PartenerLogos{
   width: 100%;
+  margin-top: 6vw;
+  margin-bottom: 0vw;
 }
 
 
 .businessPart1BussinessTitleBig {
-  font-size: 60px;
+  font-size: 70px;
   line-height: 1.1;
   font-weight: bold;
 }
@@ -182,7 +184,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 100px 0;
+  margin: 150px 0;
   gap: 40px;
 }
 
@@ -199,6 +201,7 @@
 }
 .retailersSectionSectionSubtitle{
   line-height: 1.4;
+  margin-top: 20px;
 }
 .retailersASectionImg{
   width: 50%;
@@ -281,6 +284,12 @@
     flex-direction: column-reverse;
     padding-top: 130px;
   }
+  .businessPart1PartenerLogos{
+    width: 100%;
+    margin-top: 1vw;
+    margin-bottom: 6vw;
+  }
+  
   .businessPart1BusinnesSubtitle{
     font-size: 2.2vw;
     line-height: 1.3;

@@ -69,3 +69,59 @@ table {
 	  padding: 20px 20px !important;
 	}
 }
+
+/* 404PAGE */
+.lost_page_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Hind Siliguri', sans-serif;
+	width: 90%;
+	height: 100vh;
+	margin: auto;
+}
+.lostman_img_error_page{
+	min-width: 400px;
+	width: 100%;
+}
+.title_error_page{
+    font-size: 9vw;
+    margin: 15px 0px;
+    font-weight: bold;
+}
+.title_2_error_page{
+    font-weight: bold;
+    color: #202020;
+	font-size: 3vw;
+}
+.paragraph_error_page{
+	line-height: 1.2;
+	font-weight: 300;
+	margin: 15px 0px;
+	width: 70%;
+}
+.bouton_error_page {
+    color: #ffdd29 !important;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media screen and (max-width:652px) {
+	.lost_page_container{
+		flex-direction:column ;
+		justify-content: flex-start;
+	}
+	.lostman_img_error_page{
+		min-width: 100%;
+		width: 100%;
+	}
+	.paragraph_error_page{
+		font-size:3vw ;
+		width: 90%;
+	}
+	.bouton_error_page {
+		font-size: 6vw;
+	}
+}
+

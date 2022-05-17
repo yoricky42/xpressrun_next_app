@@ -1,4 +1,5 @@
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import Page404 from './404'
 import Layout from "../component/Layout";
 import LayoutSingup from "../component/LayoutSignup";
 import "../styles/globals.css";
@@ -8,21 +9,47 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 
 function MyApp({ Component, pageProps, ...appProps }: AppProps) {
   const getContent = () => {
-    if ([`/signup`].includes(appProps.router.pathname))
-      return(
-        <LayoutSingup>
-          <Component {...pageProps} />
-        </LayoutSingup>
+    let pageLost = false;
+    const allLinksOnPage = [
+      "",
+      "signup",
+      "retailers",
+      "partners",
+      "about_us",
+      "contact_us",
+      "demo",
+      "privacy",
+    ];
+
+    allLinksOnPage.forEach(el=>{
+      if ([`/${el}`].includes(appProps.router.pathname)) {
+        pageLost=true;
+      }
+    })
+
+      if (pageLost) {
+        if ([`/signup`].includes(appProps.router.pathname)){
+          return (
+            <LayoutSingup>
+              <Component {...pageProps} />
+            </LayoutSingup>
+          );
+        }
+
+        return (
+          <Layout>
+            <Component {...pageProps} />{" "}
+          </Layout>
+        );
+      }
+
+      return (
+        <Page404/>
       );
 
-    return (
-      <Layout>
-        <Component {...pageProps} />{" "}
-      </Layout>
-    );
   };
 
   return getContent();
 }
 
-export default MyApp
+export default MyApp;
