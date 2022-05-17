@@ -113,8 +113,14 @@ table {
 		justify-content: flex-start;
 	}
 	.lostman_img_error_page{
-		min-width: 100%;
-		width: 100%;
+		min-width: 200px;
+		width: 70%;
+	}
+	.title_error_page{
+		font-size: 18vw;
+	}
+	.title_2_error_page{
+		font-size: 7vw;
 	}
 	.paragraph_error_page{
 		font-size:3vw ;
