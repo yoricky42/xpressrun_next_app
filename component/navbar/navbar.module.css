@@ -6,16 +6,22 @@
   justify-content: space-between;
   align-items: stretch;
   position: absolute;
+  z-index: 11;
   top: 30px;
-  z-index: 1;
   width: 100%;
   padding: 10px 150px;
   font-family: "Hind Siliguri", sans-serif !important;
+  max-height: 75px;
 }
-
+.navbar_logo_type_content_in_closer{
+  display: none;
+}
 .navbar_logo_type_content{
   display: flex;
   align-items: center;
+}
+.nav_bar_link_type_content_closer{
+  display: none;
 }
 
 .navbar_logo_type_content_inner_logo{
@@ -176,7 +182,6 @@
   align-items: stretch;
   background: #181818;
   height: max-content;
-  transition: 0.3s;
   box-shadow: 0 5px 17px 2px rgba(24, 24, 24, 0.938);
 }
 
@@ -185,39 +190,92 @@
   transition: 0.3s;
 }
 
+
 @media screen and (max-width: 1087px) {
-  .activeToggle {
-    height: max-content !important;
-    transition: 0.3s;
+  .navbar_logo_type_content_in_closer_logo_close{
+    cursor: pointer;
+  }
+  .nav_bar_link_type_content_closer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .hoverWhenToggleIsOn{
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 11;
+    background: rgba(24, 24, 24, 0.58);
+    opacity: 1;
+    transition: .2s;
+    pointer-events:initial
+  }
+  .hoverWhenToggleIsOFF{
+    right: -100px;
+    opacity: 0;
+    pointer-events:none
   }
   .drop_down_company_dropdown::after{
     display: none;
   }
-  .get_started_btn2{
-    display: flex;
+  .get_started_btn{
+    margin-right: 10px;
   }
   .nav_bar_link_type {
     flex-direction: column;
-  }
-  .get_started_btn{
-    display: none;
   }
   .fa_icon_type_navbar{
     display: block;
   }
   .toggle_navbar_type {
     position: absolute;
-    width: 100%;
-    top: 90%;
+    width: 0;
+    padding:0;
+    height: 0;
+    top: 0;
     flex-direction: column;
-    right: 0;
+    right: -100%;
     height: 0;
     justify-content: flex-start;
     align-items: center;
-    z-index: 2000;
-    opacity: .98;
+    z-index: 10;
     overflow: hidden;
-    background: rgba(24, 24, 24, 0.929) ;
+    background: rgba(24, 24, 24) ;
+    transition: 0;
+  }
+  .activeToggle{
+    position: fixed;
+    width: 400px;
+    height: 100vh !important;
+    padding: 20px;
+    top: 0;
+    flex-direction: column;
+    right: 0;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 12;
+    overflow: hidden;
+    background: rgba(24, 24, 24) ;
+  }
+  .drop_down_company_dropdown div a{
+    width: 100%;
+  }
+  .nav_bar_link_type_content{
+    width: 100%;
+  }
+  .nav_bar_link_type_content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .nav_bar_link_type_content ul li{
+   width: 100%;
   }
   .nav_bar_link_type_content {
     padding-bottom: 20px !important;
@@ -229,16 +287,15 @@
     justify-content: space-between;
     align-items: stretch;
     top: 0;
-    z-index: 1;
     width: 100%;
-    padding:15  px 20px;
+    padding:15px 20px;
   }
   .drop_down_company_dropdown{
     position: relative;
     opacity: 1;
     background: none;
     color: white;
-    width: max-content;
+    width: 100%;
     border-radius: 0px;
     box-shadow: none;
     height: max-content;
@@ -247,6 +304,7 @@
   }
   .drop_down_company_dropdown div{
     height: 0;
+    width: 100%;
     transition: .2s;
   }
   .drop_down_company:hover .drop_down_company_dropdown div{
@@ -276,3 +334,54 @@
   
 }
 
+
+@media screen and (max-width: 652px) {
+  .navbar_logo_type_content_in_closer{
+    display: block;
+  }
+  .nav_bar_link_type_content_closer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .activeToggle {
+    position: fixed;
+    z-index: 21;
+    width: 100%;
+    top: 0;
+    flex-direction: column;
+    right: 0;
+    height: 100vh !important;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2000;
+    opacity: 1;
+    overflow: hidden;
+    background: rgba(24, 24, 24);
+}
+.drop_down_company_dropdown,.drop_down_company_dropdown div ,.drop_down_company_dropdown div a{
+  width: 100%;
+}
+.nav_bar_link_type_content{
+  width: 100%;
+}
+.nav_bar_link_type_content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.nav_bar_link_type_content ul li{
+ width: 100%;
+}
+}
+
+@media screen and (max-width: 365px) {
+.get_started_btn{
+  display: none;
+}
+.get_started_btn2{
+  display: flex;
+}
+}
