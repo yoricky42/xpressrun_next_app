@@ -198,7 +198,7 @@
 
 .links_and_btngetStarted_in_menu{
   display: flex;
-  height: 85%;
+  height: 90%;
   flex-direction: column;
   justify-content: space-between;
 }
