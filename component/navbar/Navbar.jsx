@@ -111,7 +111,7 @@ export default function Navbar({ children }) {
                           active === "about" || active === "contact"
                             ? `${style.nav_link} ${style.active}`
                             : `${style.nav_link}`
-                        }`}
+                        } ${style.dropdown_in_menu}` }
                       >
                         Company
                         <span className={`${style.Drop_icon}`}>
