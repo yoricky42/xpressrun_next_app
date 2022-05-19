@@ -87,12 +87,11 @@
 .drop_down_company_dropdown div{
   position: relative;
   background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.205);
   color: #181818;
   width: 100%;
-  border-radius: 7px;
   overflow: hidden;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .drop_down_company_dropdown::after{
@@ -199,18 +198,26 @@
 
 .links_and_btngetStarted_in_menu{
   display: flex;
-  height: 100%;
+  height: 85%;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .get_started_btn_container_in_menu{
   padding-top: 10px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgba(238, 238, 238, 0.199);
   display: none;
 }
 
 @media screen and (max-width: 1087px) {
+  .drop_down_company_dropdown div{
+    border-radius: 0;
+    border-left: 1px solid rgb(255, 255, 255);
+  }
+  .nav_link{
+    border-bottom: 1px solid #242424;
+    font-size: 1.1em;
+}
   .get_started_btn_container_in_menu{
     display: flex;
     justify-content: flex-end;
@@ -285,7 +292,7 @@
     position: fixed;
     width: 100%;
     max-width: 400px;
-    height: 100vh !important;
+    height: 100% !important;
     padding: 20px;
     top: 0;
     flex-direction: column;
@@ -325,8 +332,7 @@
     border-radius: 0px;
     box-shadow: none;
     height: max-content;
-    border-left: 1px solid rgba(238, 238, 238, 0.199);
-    margin-left: 20px;
+    padding-left: 20px;
   }
   .drop_down_company_dropdown div{
     height: 0;
@@ -371,22 +377,10 @@
     justify-content: space-between;
   }
   .activeToggle {
-    position: fixed;
-    z-index: 21;
     width: 100%;
     max-width: 100%;
-    top: 0;
-    flex-direction: column;
-    right: 0;
-    height: 100vh !important;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 2000;
-    opacity: 1;
-    overflow: hidden;
-    background: rgba(24, 24, 24);
 }
-.drop_down_company_dropdown,.drop_down_company_dropdown div ,.drop_down_company_dropdown div a{
+.drop_down_company_dropdown div ,.drop_down_company_dropdown div a{
   width: 100%;
 }
 .nav_bar_link_type_content{
