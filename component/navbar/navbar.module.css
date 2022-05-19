@@ -6,7 +6,6 @@
   justify-content: space-between;
   align-items: stretch;
   position: absolute;
-  overflow: hidden;
   z-index: 11;
   top: 30px;
   width: 100%;
@@ -14,7 +13,7 @@
   font-family: "Hind Siliguri", sans-serif !important;
   max-height: 75px;
 }
-.navbar_logo_type_content_in_closer{
+.hoverWhenToggleIsOFF{
   display: none;
 }
 .navbar_logo_type_content{
@@ -134,10 +133,9 @@
 }
 
 .get_started_btn2{
-  height: 100%;
   min-height: 30px;
   color: #000;
-  padding: 0 15px;
+  padding:10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +143,6 @@
   font-weight: 400;
   width: max-content;
   background-color: #ffdd29;
-  margin-top: 15px;
   display: none;
 }
 
@@ -184,7 +181,6 @@
   align-items: stretch;
   background: #181818;
   height: max-content;
-  box-shadow: 0 5px 17px 2px rgba(24, 24, 24, 0.938);
 }
 
 .activeToggle {
@@ -196,20 +192,51 @@
 }
 .nav_bar_link_type_content{
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.links_and_btngetStarted_in_menu{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.get_started_btn_container_in_menu{
+  padding-top: 10px;
+  border-top: 1px solid white;
+  display: none;
 }
 
 @media screen and (max-width: 1087px) {
+  .get_started_btn_container_in_menu{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .get_started_btn{
+    display: none;
+  }
+  .get_started_btn2{
+    display: flex;
+  }
+  .drop_down_company_dropdown{
+    top:0;
+  }
+  
   .navbar_logo_type_content_in_closer_logo_close{
     cursor: pointer;
   }
   .nav_bar_link_type_content_closer{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
   }
   .hoverWhenToggleIsOn{
+    display: block;
     left: 0;
     right: 0;
     top: 0;
@@ -240,7 +267,8 @@
   }
   .toggle_navbar_type {
     position: fixed;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 100vh !important;
     padding: 20px;
     top: 0;
@@ -255,7 +283,8 @@
   }
   .activeToggle{
     position: fixed;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 100vh !important;
     padding: 20px;
     top: 0;
@@ -276,9 +305,6 @@
   }
   .nav_bar_link_type_content ul li{
    width: 100%;
-  }
-  .nav_bar_link_type_content {
-    padding-bottom: 20px !important;
   }
   .navbar{
     background: #181818;
@@ -348,6 +374,7 @@
     position: fixed;
     z-index: 21;
     width: 100%;
+    max-width: 100%;
     top: 0;
     flex-direction: column;
     right: 0;
@@ -374,14 +401,5 @@
 }
 .nav_bar_link_type_content ul li{
  width: 100%;
-}
-}
-
-@media screen and (max-width: 365px) {
-.get_started_btn{
-  display: none;
-}
-.get_started_btn2{
-  display: flex;
 }
 }
