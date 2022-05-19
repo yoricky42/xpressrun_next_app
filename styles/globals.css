@@ -109,6 +109,9 @@ table {
 }
 @media screen and (max-width:652px) {
 	.lost_page_container{
+		height: max-content;
+	}
+	.lost_page_container{
 		flex-direction:column ;
 		justify-content: flex-start;
 	}
