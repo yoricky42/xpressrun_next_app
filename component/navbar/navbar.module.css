@@ -37,12 +37,6 @@
   color: #ffdd29;
 }
 
-.dropdown_in_menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .nav_link{
   padding: 15px 20px;
   display: block;
@@ -57,7 +51,11 @@
   cursor: pointer;
   display: none;
 }
-
+.dropdown_in_menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .burger_Navbar {
   display: flex;
   align-items: center;
