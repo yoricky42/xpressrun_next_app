@@ -54,10 +54,10 @@ function Contact() {
   return (
     <div className={`${style.principalContact}`}>
       <Head>
-        <title>Xpressrun | Contact us</title>
+        <title>Contact us</title>
         <meta
           name="description"
-          content="Want to learn more about our fully automated same-day delivery platform?"
+          content="Want to learn more about our fully automated same-day delivery platform? Submit this form and our sales representative will contact you soon."
         />
       </Head>
       <div className={`${style.contactusContainer}`}>

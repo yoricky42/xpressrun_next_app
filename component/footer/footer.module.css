@@ -81,6 +81,7 @@
 }
 .footerLast_text_1{
     display: flex;
+    gap: 10px;
 }
 .footerLast_social_icon{
     margin-right: 10px;

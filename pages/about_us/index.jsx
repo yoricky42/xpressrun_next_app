@@ -18,10 +18,10 @@ function About() {
   return (
     <div className={`${style.about}`}>
       <Head>
-        <title>Xpressrun | Company</title>
+        <title>Company</title>
         <meta
           name="description"
-          content="XpressRun is on a mission to empower local economies around the globe."
+          content="XpressRun is on a mission to level the playing field for local e-commerce businesses. "
         />
       </Head>
       <TopFunct />
@@ -81,8 +81,8 @@ function About() {
         <div className={`${style.thirdAboutSubTitle}`}>
           businesses around the globe.
         </div>
-        <div>
-          <Image src={thirdimg} alt="" />
+        <div className={`${style.thirdimgIMGLast}`}>
+          <Image src={thirdimg} alt=""/>
         </div>
       </div>
     </div>

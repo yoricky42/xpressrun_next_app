@@ -13,6 +13,18 @@
   font-family: "Hind Siliguri", sans-serif !important;
   max-height: 75px;
 }
+.navbarRel{
+  background: #181818;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+  padding: 10px 150px;
+  font-family: "Hind Siliguri", sans-serif !important;
+  max-height: 75px;
+}
 .hoverWhenToggleIsOFF{
   display: none;
 }
@@ -41,6 +53,7 @@
   padding: 15px 20px;
   display: block;
   font-weight: 300;
+  font: 19px;
 }
 #BURGER{
   display: none;
@@ -64,6 +77,7 @@
 .active{
   color: #ffdd29;
   font-weight: 500;
+  font-size: 19px;
 }
 
 .drop_down_company{
@@ -133,6 +147,7 @@
   margin: 0 !important;
   padding: 0 !important;
   width: 100%;
+  font-size: 17px;
 }
 
 .get_started_btn2{

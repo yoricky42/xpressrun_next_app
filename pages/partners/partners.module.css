@@ -20,7 +20,7 @@
 .AboutTitle {
     font-weight: 700;
     color: #000;
-    font-size: 40px;
+    font-size: 60px;
     line-height: 1.1;
     margin-bottom: 10px;
 }
@@ -60,6 +60,11 @@
 }
 .DriverSection1RoueRoue{
     position: absolute;
+}
+.thirdAboutSubTitle {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4f5665;
 }
 .DriverSection1Roue{
     width: 50%;
@@ -228,10 +233,16 @@
     flex-wrap: wrap;
     perspective: 1000px;
 }
+/* .DriverSection2CardTitleContainer{
+    margin: 20px 0;
+} */
+.DriverSection2CardTitle{
+    font-weight: 700;
+}
 .DriverSection2Card{
     text-align: center;
-    width: 230px;
-    height: 210px;
+    width: 280px;
+    height: 250px;
     line-height: 1.1;
     display: flex;
     flex-direction: column;
@@ -477,6 +488,13 @@
 }
 
 @media screen and (max-width:652px){
+    .AboutTitle {
+        font-weight: 700;
+        color: #000;
+        font-size: 9vw;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
     .DriverSection1 {
         justify-content: center;
         align-items: center;

@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import style from'./demo.module.css';
 import TopFunct from "../../component/Top/top";
 import { InlineWidget } from "react-calendly";
+import Head from 'next/head'
 // import {MediaQuery, useMediaQuery} from 'react-responsive'
 
 function Demo() {
@@ -22,6 +23,13 @@ function Demo() {
     // const isRetina = useMediaQuery({ minResolution: '2dppx' })
     return (
         <div className={`${style.demoContainer} ALL_COMPONENT`}>
+            <Head>
+        <title>Book a demo</title>
+        <meta
+          name="description"
+          content="Book a demo of XpressRun now to see our last-mile logistics platform in action."
+        />
+      </Head>
             <TopFunct />
             <div className={`${style.firstDemo}`}>
                 <div className={`${style.firstDemotext}`}>

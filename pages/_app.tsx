@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import Page404 from './404'
 import Layout from "../component/Layout";
 import LayoutSingup from "../component/LayoutSignup";
+import LayoutNavbarRel from "../component/LayoutNavBarRel";
 import "../styles/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -33,6 +34,12 @@ function MyApp({ Component, pageProps, ...appProps }: AppProps) {
             <LayoutSingup>
               <Component {...pageProps} />
             </LayoutSingup>
+          );
+        } else if ([`/privacy`].includes(appProps.router.pathname)){
+          return (
+            <LayoutNavbarRel>
+              <Component {...pageProps} />
+            </LayoutNavbarRel>
           );
         }
 

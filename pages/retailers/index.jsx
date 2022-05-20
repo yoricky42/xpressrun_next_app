@@ -69,14 +69,14 @@ function Business() {
   return (
     <div className={`${style.business}`}>
       <Head>
-        <title>Xpressrun | Retailers</title>
+        <title>Ship Faster & Smarter</title>
         <meta
           name="description"
-          content="Improve conversion rate by offering same day delivery directly to customers at checkout."
+          content="Offer an ultra-fast delivery experience to your customers while maintaining your brand from start to finish. Same-Day delivery directly from your website."
         />
       </Head>
       <TopFunct />
-      <div className={`${style.businessPart1_partenerLogos}`}>
+      <div className={`${style.businessPart1_partenerLogos} paddingHomeCenter`}>
         <div className={`${style.businessPart1}`}>
           <div className={`${style.businessPart1ContenuDeTexte}`}>
             <div className={`${style.businessPart1BussinessTitleBig}`}>

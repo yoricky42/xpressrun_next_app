@@ -56,8 +56,8 @@ function Home() {
   return (
     <div className={style.home}>
       <Head>
-        <title>Same-Day Delivery for eCommerce businesses</title>
-        <meta name="description" content="XpressRun is a multicarrier platform that enables Same-Day & Next-Day delivery for e-commerce businesses. We integrate seamlessly into e-commerce platforms including Shopify, Woocommerce, Squarespace, Etsy & more." />
+        <title>XpressRun: Same-Day Delivery for eCommerce businesses</title>
+        <meta name="description" content="XpressRun is a multi-carrier platform that enables an ultra-fast delivery experience while giving brands end to end ownership of the delivery process. Own your data & brand identity from start to finish." />
       </Head>
       <TopFunct />
       {/* <Navbar active="home" /> */}

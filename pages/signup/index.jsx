@@ -9,6 +9,8 @@ import Link  from "next/link";
 import Image from "next/image"
 import NumberFormat from "react-number-format";
 import style from  "./signup.module.css";
+import Head from "next/head";
+
 
 export default function Signin({ location }) {
 	const [loading, setLoading] = useState(false);
@@ -130,6 +132,13 @@ export default function Signin({ location }) {
 
 	return (
 		<div className={`${style.b2c_login_container}`}>
+			<Head>
+        <title>Get started</title>
+        <meta
+          name="description"
+          content="Offer a delightful ultra-fast delivery experience to your customers directly from your website. Integrates with Shopify, Woo-commerce, Squarespace and more. "
+        />
+      </Head>
 			{step === "SUCCESS" ? (
 				// <ConfirmAccount email={data.email} loading={loading} />
 				<div>ok</div>
