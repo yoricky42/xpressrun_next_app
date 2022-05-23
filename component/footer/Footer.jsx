@@ -11,6 +11,7 @@ import style from "./footer.module.css";
 
 
 function footer() {
+  var annee = (new Date()). getUTCFullYear();
 return (
 <div className={`${style.footer_Container_home}`}>
   <div className={`${style.footer_Container_home_element}`}>
@@ -31,10 +32,10 @@ return (
     <div className={`${style.legalfooter_home}`}>
       <div className={`${style.Title_footer_home}`}>LEGAL</div>
       <div className={`${style.legalsTitle_footer_home}`}>
-        <a href="#">Terms of Use</a>
-        <a href="#">Terms of Conditions</a>
+        {/* <a href="#">Terms of Use</a>
+        <a href="#">Terms of Conditions</a> */}
         <Link href="/privacy">Privacy policy</Link>
-        <a href="#">Cookie policy</a>
+        {/* <a href="#">Cookie policy</a> */}
       </div>
     </div>
     <div className={`${style.newsletterfooter_home}`}>
@@ -62,15 +63,15 @@ return (
   </div>
   <div className={`${style.footerLast}`}>
     <div className={`${style.footerLast_text_1}`}>
-      <p className="mr-3">
+      <p>
         <a href="#">Privacy & terms</a>
       </p>
       <p>
-        <Link href="/contact">Contact us</Link>
+        <Link href="/contact_us">Contact us</Link>
       </p>
     </div>
     <div>
-      <p>Copyright @ 2021 XpressRun</p>
+      <p>Copyright @ {annee} XpressRun</p>
     </div>
     <div className={`${style.footerLast_social}`}>
       <a target="_blank" href="https://www.facebook.com/xpressrunapp">

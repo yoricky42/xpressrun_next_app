@@ -21,10 +21,10 @@ function partners() {
   return (
     <div className={`${style.driver} .ALL_COMPONENT`}>
       <Head>
-        <title>Xpressrun | Partners</title>
+        <title>Join our logistics network</title>
         <meta
           name="description"
-          content="Join hundreds of delivery providers around the globe with ashared mission of helping local retail thrive."
+          content="Join hundreds of delivery & fulfillment providers around the globe with a shared mission of helping local retail thrive. Partners include Doordash, Roadie, Frayt and more. "
         />
       </Head>
       <TopFunct />
@@ -78,7 +78,9 @@ function partners() {
         </div>
         <div className={`${style.DriverSection2Cards}`}>
           <div className={`${style.DriverSection2Card}`}>
+            <div className={`${style.DriverSection2CardImg}`}>
             <Image src={light} alt="" />
+            </div>
             <div className={`${style.DriverSection2CardTitleContainer}`}>
               <div className={`${style.DriverSection2CardTitle}`}>
                 Expand your
@@ -91,7 +93,9 @@ function partners() {
             </div>
           </div>
           <div className={`${style.DriverSection2Card}`}>
+          <div className={`${style.DriverSection2CardImg}`}>
             <Image src={atom} alt="" />
+            </div>
             <div className={`${style.DriverSection2CardTitleContainer}`}>
               <div className={`${style.DriverSection2CardTitle}`}>
                 Support local
@@ -104,7 +108,9 @@ function partners() {
             </div>
           </div>
           <div className={`${style.DriverSection2Card}`}>
-            <Image src={dollar} alt="" />
+          <div className={`${style.DriverSection2CardImg}`}>
+          <Image src={dollar} alt="" />
+            </div>
             <div className={`${style.DriverSection2CardTitleContainer}`}>
               <div className={`${style.DriverSection2CardTitle}`}>Zero</div>
               <div className={`${style.DriverSection2CardTitle}`}>

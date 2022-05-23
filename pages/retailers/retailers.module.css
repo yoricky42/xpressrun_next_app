@@ -12,17 +12,17 @@
   align-items: center;
   justify-content: center;
   background-color: #181818;
-  min-height: 95vh;
-  padding: 100px 150px !important
+  min-height: 51vw;
 }
 
 .businessPart1 {
-  padding-top: 60px;
+  padding-top: 6vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #ffff;
   height: max-content;
+  margin-bottom: 6vw;
 }
 .businessPart1ContenuDeTexte{
   min-width: 40%;
@@ -33,13 +33,14 @@
 }
 .businessPart1PartenerLogos{
   width: 100%;
-  margin-top: 6vw;
-  margin-bottom: 0vw;
+}
+.businessPart1PartenerLogos span{
+  width: 100% !important;
 }
 
 
 .businessPart1BussinessTitleBig {
-  font-size: 70px;
+  font-size: 4vw;
   line-height: 1.1;
   font-weight: bold;
 }
@@ -54,7 +55,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 4vw;
 }
 .businessPart1ButtonsButton {
   padding: 15px 30px;
@@ -102,7 +102,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin-top: 20px !important;
+  margin: 70px 0!important;
 }
 .businnesPart2Element {
   position: relative;
@@ -118,6 +118,7 @@
   transition: 1s;
   height: 17vh;
 }
+
 .businnesPart2Element1 {
   opacity: 0;
   transform: translateY(-100px);
@@ -184,27 +185,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 150px 0;
-  gap: 40px;
+  height: 45vw;
+  gap: 20px;
+}
+
+.retailersASection .businessPart1BussinessTitleBig {
+  font-size: 4vw;
+  line-height: 1.1;
+  font-weight: bold;
 }
 
 .retailersASectionLast{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 7vw;
 }
 
-
 .retailersASectionSection{
-  width: 100%;
-  max-width: 600px;
+  width: 50%;
 }
 .retailersSectionSectionSubtitle{
   line-height: 1.4;
-  margin-top: 20px;
+  margin-top: 30px;
+  width:90%;
+  font-size: 18px;
 }
 .retailersASectionImg{
-  width: 50%;
+  width: 40%;
 }
 .retailersASectionImg img{
   width: 100%;
@@ -265,39 +273,24 @@
   }
 }
 
-@media screen and (max-width: 968px) {
-  .retailersASection,.businessPart1{
-    flex-direction: column-reverse;
-  }
-  .reverse {
-    flex-direction: column!important;
-  }
-  .retailersASection{
-    margin: 7vw 0;
-  }
-  
-}
-
-
 @media screen and (max-width: 1212px) {
   .businessPart1{
     flex-direction: column-reverse;
     padding-top: 130px;
+    margin: 0;
   }
   .businessPart1PartenerLogos{
-    width: 100%;
-    margin-top: 1vw;
     margin-bottom: 6vw;
+    padding: 0 10px;
   }
-  
+  .businessPart1ContenuDeTexte{
+    margin: 4vw 0;
+  }
   .businessPart1BusinnesSubtitle{
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     line-height: 1.3;
     font-weight: 300;
-    margin: 2vw 0;
-  }
-  .businessPart1_partenerLogos {
-    padding: 0 !important;
+    margin: 4vw 0;
   }
   .businessPart1ImageDashboard {
     width: 75%;
@@ -314,28 +307,68 @@
   .businessPart1Buttons{
     justify-content: center;
   }
-  .retailersASectionSection{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .businessPart1BussinessTitleBig{
-    margin-bottom: 40px;
-  }
   .retailersASection{
     padding:10px;
+  }  
+}
+
+@media screen and (max-width: 968px) {
+  .retailersASectionSection{
+    width: 100%;
+    margin-bottom: 4vw;
   }
+  .retailersASection,.businessPart1{
+    flex-direction: column-reverse;
+  }
+  .reverse {
+    flex-direction: column!important;
+  }
+  .retailersASection{
+    height: auto;
+    margin: 7vw 0;
+    text-align: center;
+  }
+  .retailersSectionSectionSubtitle{
+    width: 100%;
+}
+.retailersASectionImg{
+  width: 90%;
+}
+.retailersASection{
+  gap: 4vw;
+}
+.retailersASection .businessPart1BussinessTitleBig {
+  font-size: 8vw;
+}
+.businessPart1BussinessTitleBig {
+  font-size: 8vw;
+  line-height: 1;
+  font-weight: bold;
+}
+.lastSection .businessPart1BussinessTitleBig {
+  font-size: 6vw;
+  line-height: 1;
+  font-weight: bold;
+}
+.lastSection p{
+  margin:20px 0;
+}
+.retailersSectionSectionSubtitle{
+  font-size: 2.5vw;
+}
+.businessPart1BusinnesSubtitle{
+  font-size: 2vw;
+}
   
 }
+
+
 @media screen and (max-width: 1086px) {
   .businessPart1{
     padding-top: 90px;
   }
   .businessPart1_partenerLogos{
     min-height: max-content;
-}
-.businessPart1PartenerLogos{
-  margin: 30px 0 ;
 }
 }
 
@@ -375,17 +408,7 @@
   .businnesPart2ElementTitle{
     font-size: 48px;
 }
-  .retailersASectionImg{
-    width: 90%;
-  }
-  .businessPart1BussinessTitleBig {
-    font-size: 11vw;
-    line-height: 1;
-    font-weight: bold;
-  }
-  .retailersSectionSectionSubtitle{
-    font-size: 4vw;
-  }
+  
   .businessPart1PartenerLogos{
     width: 100%;
   }
@@ -397,7 +420,6 @@
   }
   .businessPart2 {
     flex-direction: column;
-    margin-top: 10px !important;
   }
   .businnesPart2-element-left {
     align-self: flex-end;
@@ -452,11 +474,11 @@
   }
 }
 
-@media screen and (max-width: 500px){
+/* @media screen and (max-width: 500px){
   .paddingHomeCenter {
     padding: 30px 10px!important;
 }
-}
+} */
 
 @media screen and (max-width: 220px) {
   .businessPart1-bussinessTitleBig {
