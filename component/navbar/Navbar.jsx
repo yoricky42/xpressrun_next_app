@@ -153,7 +153,7 @@ export default function Navbar({ children }) {
                   </ul>
                   <div className={`${style.get_started_btn_container_in_menu}`}>
                     <a
-                      href={`${process.env.D_URL}`}
+                      href="/signup"
                       className={`${style.get_started_btn2}`}
                     >
                       Get Started
@@ -171,12 +171,14 @@ export default function Navbar({ children }) {
               onClick={() => SetToglleNav(false)}
             ></div>
             <div className={`${style.burger_Navbar}`}>
+              <Link href="/signup">
               <a
-                href={`${process.env.D_URL}`}
+                
                 className={`${style.get_started_btn}`}
               >
                 Get Started
               </a>
+              </Link>
 
               <label htmlFor="BURGER" onClick={() => SetToglleNav(!ToglleNav)}>
                 {!ToglleNav ? (

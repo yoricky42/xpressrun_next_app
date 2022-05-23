@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 150px;
+    padding:150px 0;
 }
 .contactusContainer *{
    width: 100%;
@@ -171,17 +171,14 @@
 }
 
 @media screen and (max-width:1086px) {
-    .contactusContainer{
-        padding: 0 50px ;
-    }
     .principalContact{
         padding-top: 90px;
     }
+    .contactusContainer{
+        padding: 90px 0;
+    }
 }
 @media screen and (max-width:560px) {
-    .contactusContainer{
-        padding: 0 20px ;
-    }
     .contactUs_leftSide_Subtitle{
         width: 100%;
     }

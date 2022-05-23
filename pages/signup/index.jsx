@@ -157,7 +157,7 @@ export default function Signin({ location }) {
 										</div>
 										<div className={`${style.card_title_sub}`}>
 											Already have an account?{" "}
-											<a href={process.env.D_URL}>Log in</a>
+											<a href={`${process.env.D_URL}`}>Log in</a>
 										</div>{" "}
 									</div>
 									<div className={`${style.InputOnFormContainer}`}>

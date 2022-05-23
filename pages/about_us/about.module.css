@@ -7,13 +7,15 @@
   background-color: #181818;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   padding-bottom: 80px !important;
   padding-top: 150px !important;
 }
 .firstAbouttext{
   line-height: 1.1;
+  font-size: 12px;
 }
 
 .firstAboutImg{
@@ -21,7 +23,7 @@
 }
 .firstAboutBig{
   font-weight: bold;
-  font-size: 62px;
+  font-size: 6em;
 }
 .firstAboutLigneBottom{
   width: 200px;
@@ -30,7 +32,8 @@
   margin: 20px 0;
 }
 .firstAboutSmall{
-  width: 80%;
+  width: 70%;
+  font-size: 1.5em;
 }
 .secondAbout{
   padding: 110px 30px;
@@ -113,7 +116,7 @@
   }
 }
 
-@media screen and (max-width:995px) {
+@media screen and (max-width:1201px) {
   .firstAbout{
     flex-direction: column;
     align-items: center;

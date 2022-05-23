@@ -1,5 +1,5 @@
 import {React} from "react"
-
+import Head from "next/head";
 const rawHTML=`
 <body>
 <style>
@@ -1172,8 +1172,14 @@ font-family: Arial !important;
 
 function Policy(){
     return(
-
        <div style={{padding:"20px 40px"}}>
+         <Head>
+        <title>Xpressrun Privacy notice</title>
+        <meta
+          name="description"
+          content=""
+        />
+      </Head>
             <div dangerouslySetInnerHTML={{ __html: rawHTML }}></div>
        </div>
     )

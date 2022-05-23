@@ -52,7 +52,7 @@ function Contact() {
   };
 
   return (
-    <div className={`${style.principalContact}`}>
+    <div className={`${style.principalContact} paddingHomeCenter`}>
       <Head>
         <title>Contact us</title>
         <meta
