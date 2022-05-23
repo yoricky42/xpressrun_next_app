@@ -147,6 +147,7 @@ function Business() {
         </div>
       </InView>
 
+      <div className={`${style.itemitemitem}`}>
       <div className={`${style.retailersASection} paddingHomeCenter`}>
         <div className={`${style.retailersASectionSection}`}>
           <div className={`${style.businessPart1BussinessTitleBig}`}>
@@ -208,6 +209,7 @@ function Business() {
             <Image src={tracking} alt="" />
           </div>
         </div>
+      </div>
       </div>
 
       <div className={`${style.retailersASectionLast} paddingHomeCenter`}>

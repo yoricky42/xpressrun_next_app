@@ -370,6 +370,7 @@
   align-items: flex-start;
   top: 0;
   transition: 1s;
+  overflow-x: hidden;
 }
 .PR {
   position: relative;
