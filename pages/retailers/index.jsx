@@ -100,11 +100,11 @@ function Business() {
 								Get started
 							</a>
 
-							<a
+							<Link
 								href='/demo'
 								className={`${style.schedule} ${style.businessPart1ButtonsButton}`}>
 								Schedule a demo
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className={`${style.businessPart1ImageDashboard}`}>
@@ -215,12 +215,12 @@ function Business() {
 					</div>
 					<div className={`${style.alignToutColum}`}>
 						<p>We’d love to learn more about your brand.</p>
-						<a href='/demo'>
+						<Link href='/demo'>
 							<div
 								className={`${style.schedule2} ${style.businessPart1ButtonsButton}`}>
 								Schedule a demo
 							</div>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

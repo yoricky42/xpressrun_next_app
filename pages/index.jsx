@@ -93,7 +93,7 @@ function Home() {
 						</a>
 						&nbsp;
 						<p className={style.demo}>
-							<a href='/demo'>Schedule a demo</a>
+							<Link href='/demo'>Schedule a demo</Link>
 						</p>
 					</div>
 				</div>
@@ -177,7 +177,7 @@ function Home() {
 							solutions that work for you and your customers.
 						</p>
 
-						<a
+						<Link
 							href='/retailers'
 							style={{ margin: "15px 0", display: "inline-block" }}
 							className={`${style.smallTypeTextAffordableLinkPart}`}>
@@ -188,7 +188,7 @@ function Home() {
 							<span className={`${style.arrowLink}`}>
 								<Image src={arrowAffordablelink} alt='' />
 							</span>
-						</a>
+						</Link>
 					</div>
 					<div
 						className={`${

@@ -34,7 +34,7 @@ export default function Signin({}) {
 				lastName: lastName,
 			});
 		}
-	}, []);
+	}, [data, setData]);
 
 	let [errors, setErrors] = useState({
 		name: "",
