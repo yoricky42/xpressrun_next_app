@@ -1,7 +1,5 @@
-import react from 'react'
-import lostman from '../public/404man.svg'
-import Image from 'next/image'
-import Link from 'next/link'
+import lostman from "../public/404man.svg";
+import Image from "next/image";
 
 const PageLost=()=>{
     return(
