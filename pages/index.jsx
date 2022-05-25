@@ -181,13 +181,15 @@ function Home() {
 							href='/retailers'
 							style={{ margin: "15px 0", display: "inline-block" }}
 							className={`${style.smallTypeTextAffordableLinkPart}`}>
-							<span
-								className={`${style.smallTypeTextAffordable} ${style.smallTypeTextAffordableLink}`}>
-								Learn more
-							</span>
-							<span className={`${style.arrowLink}`}>
-								<Image src={arrowAffordablelink} alt='' />
-							</span>
+							<a>
+								<span
+									className={`${style.smallTypeTextAffordable} ${style.smallTypeTextAffordableLink}`}>
+									Learn more
+								</span>
+								<span className={`${style.arrowLink}`}>
+									<Image src={arrowAffordablelink} alt='' />
+								</span>
+							</a>
 						</Link>
 					</div>
 					<div
