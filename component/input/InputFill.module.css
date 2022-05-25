@@ -11,6 +11,11 @@
     justify-content: space-between;
 }
 
+.invalid_feedback{
+    color: red;
+    font-size: 14px;
+}
+
 .SelectCompCust{
     position: relative;
 }
