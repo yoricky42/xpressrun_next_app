@@ -84,7 +84,7 @@ function Home() {
 						</div>
 					</div>
 					<div className={style.homeHeaderContentSelectAndOthers}>
-						<a href={`${process.env.D_URL}`}>
+						<a href={`/signup`}>
 							<div className={style.homeHeaderContentSelect}>
 								<select className={style.selectBox}>
 									<option value='0'>Get started - it&apos;s free</option>
@@ -181,7 +181,7 @@ function Home() {
 							href='/retailers'
 							style={{ margin: "15px 0", display: "inline-block" }}
 							className={`${style.smallTypeTextAffordableLinkPart}`}>
-							<a>
+							<>
 								<span
 									className={`${style.smallTypeTextAffordable} ${style.smallTypeTextAffordableLink}`}>
 									Learn more
@@ -189,7 +189,7 @@ function Home() {
 								<span className={`${style.arrowLink}`}>
 									<Image src={arrowAffordablelink} alt='' />
 								</span>
-							</a>
+							</>
 						</Link>
 					</div>
 					<div
@@ -250,18 +250,20 @@ function Home() {
 							option at checkout.
 						</p>
 
-						<a
-							href={`${process.env.D_URL}`}
+						<Link
+							href={`/signup`}
 							style={{ margin: "15px 0", display: "inline-block" }}
 							className={`${style.smallTypeTextAffordableLinkPart}`}>
-							<span
-								className={`${style.smallTypeTextAffordable} ${style.smallTypeTextAffordableLink}`}>
-								Get started
-							</span>
-							<span className={`${style.arrowLink}`}>
-								<Image src={arrowAffordablelink} alt='' />
-							</span>
-						</a>
+							<>
+								<span
+									className={`${style.smallTypeTextAffordable} ${style.smallTypeTextAffordableLink}`}>
+									Get started
+								</span>
+								<span className={`${style.arrowLink}`}>
+									<Image src={arrowAffordablelink} alt='' />
+								</span>
+							</>
+						</Link>
 					</div>
 				</div>
 			</InView>

@@ -94,11 +94,11 @@ function Business() {
 							</p>
 						</div>
 						<div className={`${style.businessPart1Buttons}`}>
-							<a
-								href={`${process.env.D_URL}`}
-								className={`${style.Getbutton} ${style.businessPart1ButtonsButton}`}>
-								Get started
-							</a>
+							<Link
+								href={`/signup`}
+								>
+								<a className={`${style.Getbutton} ${style.businessPart1ButtonsButton}`}>Get started</a>
+							</Link>
 
 							<Link
 								href='/demo'

@@ -25,7 +25,7 @@ return (
         <Link href="/about_us">About us</Link>
         <Link href="/retailers">Retailers</Link>
         <Link href="/partners">Partners</Link>
-        <a href={`${process.env.D_URL}/tracking`}>Tracking</a>
+        <a href={`${process.env.NEXT_PUBLIC_D_URL}/tracking`}>Tracking</a>
         <Link href="/demo">Demo</Link>
       </div>
     </div>

@@ -8,19 +8,16 @@ export default function Navbar({ children }) {
 	return (
 		<div id='Header'>
 			<div>
-				<div
-					className={`${style.navbar} ${style.NAVBARTYPE} paddingHomeCenter`}>
+				<div className={`${style.navbar} ${style.NAVBARTYPE} paddingHomeCenter`}>
 					<div className={`${style.navbar_logo_type_content}`}>
-						<a
-							href='/'
-							className={`${style.navbar_logo_type_content_inner_logo}`}>
-							<Image src={logo} alt='' />
-						</a>
+						<Link href='/'>
+							<a className={`${style.navbar_logo_type_content_inner_logo}`}>
+								<Image src={logo} alt='' />
+							</a>
+						</Link>
 					</div>
 					<div className={`${style.burger_Navbar}`}>
-						<a
-							href={`${process.env.D_URL}`}
-							className={`${style.get_started_btn3}`}>
+						<a 	href={`${process.env.D_URL}`} className={`${style.get_started_btn3}`}>
 							Sign In
 						</a>
 					</div>
