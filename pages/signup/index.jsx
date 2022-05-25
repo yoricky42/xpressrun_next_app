@@ -34,7 +34,7 @@ export default function Signin({}) {
 				lastName: lastName,
 			});
 		}
-		// console.log(process.env)
+		console.log(data)
 	}, []);
 
 	let [errors, setErrors] = useState({
