@@ -120,7 +120,7 @@ export const InputFill = ({
 			)}
 
 			{error && (
-				<p className='invalid-feedback' style={{ lineHeight: 1.1 }}>
+				<p className={`${style.invalid_feedback}`}>
 					{error}
 				</p>
 			)}

@@ -116,72 +116,73 @@ function Business() {
 				</div>
 			</div>
 
-			<InView
-				ref={(el) => (refPARTtoINC = el)}
-				threshold={threshold}
-				as='div'
-				onChange={(inView, entry) => {
-					if (inView === true) {
-						Increment();
-					}
-				}}
-				className={`${style.businessPart2} paddingHomeCenter`}>
-				<div className={`${style.businnesPart2Element}`}>
-					<p className={`${style.businnesPart2ElementTitle}`}>{I}</p>
-					<p className={`${style.italic}`}>Cities</p>
+			<div className={`${style.itemitemitem}`}>
+				<div className={`${style.retailersASection} paddingHomeCenter`}>
+					<div className={`${style.retailersASectionSection}`}>
+						<div className={`${style.businessPart1BussinessTitleBig}`}>
+							<p>Instant plug and </p>
+							<p>play integration</p>
+						</div>
+						<p className={`${style.retailersSectionSectionSubtitle}`}>
+							XpressRun integrates directly to your online store. Regardless of
+							whether you’re using an e-commerce platform (ex. Shopify) or
+							custom built - get started in just a few clicks without having to
+							write a single line of code.
+						</p>
+					</div>
+					<div
+						className={`${style.retailersASectionImgEcomContainer} ${style.retailersASectionImg}`}>
+						<div className={`${style.retailersASectionImgEcom}`}>
+							<Image src={eCom} alt='' />
+						</div>
+						<div className={`${style.retailersASectionImgXpress}`}>
+							<Image src={xpressRun} alt='' />
+						</div>
+					</div>
 				</div>
-				<div
-					className={`${style.businnesPart2Element} ${style.businnesPart2ElementLeft}`}>
-					<p className={`${style.businnesPart2ElementTitle}`}>{J}M+</p>
-					<p className={`${style.italic}`}>Delivery Partners</p>
-					<p className={`${style.italic}`}>Network</p>
-				</div>
-				<div className={`${style.businnesPart2Element}`}>
-					<p className={`${style.businnesPart2ElementTitle}`}>{K}%</p>
-					<p className={`${style.italic}`}>Delivery ETA accuracy</p>
-				</div>
-			</InView>
 
-			<div className={`${style.retailersASection} paddingHomeCenter`}>
-				<div className={`${style.retailersASectionSection}`}>
-					<div className={`${style.businessPart1BussinessTitleBig}`}>
-						<p>Instant plug and </p>
-						<p>play integration</p>
+				<div className={`${style.retailersASection} paddingHomeCenter`}>
+					<div className={`${style.retailersASectionSection}`}>
+						<div className={`${style.businessPart1BussinessTitleBig}`}>
+							<p>Instant plug and </p>
+							<p>play integration</p>
+						</div>
+						<p className={`${style.retailersSectionSectionSubtitle}`}>
+							XpressRun integrates directly to your online store. Regardless of
+							whether you’re using an e-commerce platform (ex. Shopify) or
+							custom built - get started in just a few clicks without having to
+							write a single line of code.
+						</p>
 					</div>
-					<p className={`${style.retailersSectionSectionSubtitle}`}>
-						XpressRun integrates directly to your online store. Regardless of
-						whether you’re using an e-commerce platform (ex. Shopify) or custom
-						built - get started in just a few clicks without having to write a
-						single line of code.
-					</p>
+					<div
+						className={`${style.retailersASectionImgEcomContainer} ${style.retailersASectionImg}`}>
+						<div className={`${style.retailersASectionImgEcom}`}>
+							<Image src={eCom} alt='' />
+						</div>
+						<div className={`${style.retailersASectionImgXpress}`}>
+							<Image src={xpressRun} alt='' />
+						</div>
+					</div>
 				</div>
-				<div
-					className={`${style.retailersASectionImgEcomContainer} ${style.retailersASectionImg}`}>
-					<div className={`${style.retailersASectionImgEcom}`}>
-						<Image src={eCom} alt='' />
-					</div>
-					<div className={`${style.retailersASectionImgXpress}`}>
-						<Image src={xpressRun} alt='' />
-					</div>
-				</div>
-			</div>
 
-			<div
-				className={`${style.retailersASection} ${style.reverse} paddingHomeCenter`}>
-				<div className={`${style.retailersASectionImg}`}>
-					<Image src={provider} alt='' />
-				</div>
-				<div className={`${style.retailersASectionSection}`}>
-					<div className={`${style.businessPart1BussinessTitleBig}`}>
-						<p>Instant access to </p>
-						<p>2.5 millions couriers</p>
+				<div className={`${style.retailersASection} paddingHomeCenter`}>
+					<div className={`${style.retailersASectionSection}`}>
+						<div className={`${style.businessPart1BussinessTitleBig}`}>
+							<p>Your brand from</p>
+							<p>start to finish</p>
+						</div>
+						<p className={`${style.retailersSectionSectionSubtitle}`}>
+							XpressRun allows you to own the entire last-mile delivery
+							experience- from checkout to your customers’ doorstep. Create
+							beautiful branded tracking pages, shipping labels, and text
+							communications that resonates with your customers.
+						</p>
 					</div>
-					<p className={`${style.retailersSectionSectionSubtitle}`}>
-						Our nationwide Same-Day delivery network allows you to grow without
-						limits. Our algorithm compares & detects the quickest and most
-						affordable option from our providers within the checkout, and quotes
-						the cost directly to the customer.
-					</p>
+					<div className={`${style.retailersASectionImg}`}>
+						<div className={`${style.retailersASectionImgTracking}`}>
+							<Image src={tracking} alt='' />
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -214,12 +215,12 @@ function Business() {
 					</div>
 					<div className={`${style.alignToutColum}`}>
 						<p>We’d love to learn more about your brand.</p>
-							<a href='/demo'>
-								<div
-									className={`${style.schedule2} ${style.businessPart1ButtonsButton}`}>
-									Schedule a demo
-								</div>
-							</a>
+						<a href='/demo'>
+							<div
+								className={`${style.schedule2} ${style.businessPart1ButtonsButton}`}>
+								Schedule a demo
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>

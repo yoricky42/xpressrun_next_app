@@ -105,7 +105,7 @@ export default function Signin({}) {
 			})
 			.then((res) => {
 				if (data.token) {
-					window.location = `${process.env.API_URL}/integration/redirect?token=${data.token}`;
+					window.location = `${process.env.D_URL}/integration/redirect?token=${data.token}`;
 				} else setStep("SUCCESS");
 			})
 			.catch(({ response }) => {
@@ -125,7 +125,11 @@ export default function Signin({}) {
 	};
 
 	return (
-		<div className={`${style.b2c_login_container}`}>
+		<div> 
+		{step === "SUCCESS" ? (
+			<ConfirmAccount email={data.email} />
+		) : (
+			<div className={`${style.b2c_login_container}`}>
 			<Head>
 				<title>Get started</title>
 				<meta
@@ -133,9 +137,6 @@ export default function Signin({}) {
 					content='Offer a delightful ultra-fast delivery experience to your customers directly from your website. Integrates with Shopify, Woo-commerce, Squarespace and more. '
 				/>
 			</Head>
-			{step === "SUCCESS" ? (
-				<ConfirmAccount email={data.email} />
-			) : (
 				<div>
 					<form className={`${style.myForm}`} autoComplete='off'>
 						<div className={`${style.card}`}>
@@ -340,7 +341,8 @@ export default function Signin({}) {
 						</div>
 					</form>
 				</div>
-			)}
+			</div>
+		)}
 		</div>
 	);
 }
