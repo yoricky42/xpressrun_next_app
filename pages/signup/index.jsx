@@ -11,7 +11,7 @@ import style from "./signup.module.css";
 import axios from "axios";
 import Head from "next/head";
 
-export default function Signin({ }) {
+export default function Signin({}) {
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
@@ -33,12 +33,7 @@ export default function Signin({ }) {
 				firstName: firstName,
 				lastName: lastName,
 			});
-			localStorage.setItem(
-				"plugin_token",
-				new URLSearchParams(window.location.search).get("token")
-			);
 		}
-		console.log(process.env.API_URL)
 	}, []);
 
 	let [errors, setErrors] = useState({
@@ -82,7 +77,7 @@ export default function Signin({ }) {
 		{ name: "Grocery", value: "Grocery" },
 		{ name: "Specility retail", value: "Specility retail" },
 		{ name: "food & drink", value: "food & drink" },
-		{ name: "Other", value: "Other" },
+		{ name: "Other", value: "Other" }
 	]);
 
 	const handleChange = ({ currentTarget }) => {
@@ -94,26 +89,23 @@ export default function Signin({ }) {
 	const handleSubmit = async () => {
 		setLoading(true);
 		await axios
-			.post(
-				`${"https://developer.xpressrun.com"}/businesses/public/create-account`,
-				{
-					name: data.name,
-					category: data.category,
-					monthlyVolume: data.monthlyVolume,
-					users: [
-						{
-							email: data.email,
-							firstName: data.firstName,
-							lastName: data.lastName,
-							phoneNumber: data.phoneNumber,
-							password: data.password,
-						},
-					],
-				}
-			)
+			.post(`${process.env.API_URL}/businesses/public/create-account`, {
+				name: data.name,
+				category: data.category,
+				monthlyVolume: data.monthlyVolume,
+				users: [
+					{
+						email: data.email,
+						firstName: data.firstName,
+						lastName: data.lastName,
+						phoneNumber: data.phoneNumber,
+						password: data.password,
+					},
+				],
+			})
 			.then((res) => {
 				if (data.token) {
-					window.location = `${process.env.D_URL}/integration/redirect?token=${data.token}`;
+					window.location = `${process.env.API_URL}/integration/redirect?token=${data.token}`;
 				} else setStep("SUCCESS");
 			})
 			.catch(({ response }) => {
@@ -340,7 +332,7 @@ export default function Signin({ }) {
 										</div>
 										<span style={{ fontSize: "15px", lineHeight: "1" }}>
 											We provide instant access to hundreds of delivery
-											providers and millions of drivers around the world.{" "}
+											providers and millions of drivers around the world.
 										</span>
 									</div>
 								</div>

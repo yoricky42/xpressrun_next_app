@@ -3306,7 +3306,7 @@
     "array-includes" "^3.1.4"
     "object.assign" "^4.1.2"
 
-"keycloak-js@>=9.0.2":
+"keycloak-js@^18.0.0", "keycloak-js@>=9.0.2":
   "integrity" "sha512-kaD6nrzgYX3NhgwQfVEZiAzaZXua3PSBIBWGWf8fgqPgUdiO8uvYaKV1Ebf43IAB5M8kvubW+2J+eBS+UnWsuw=="
   "resolved" "https://registry.npmjs.org/keycloak-js/-/keycloak-js-18.0.0.tgz"
   "version" "18.0.0"
