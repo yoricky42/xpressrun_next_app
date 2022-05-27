@@ -10,15 +10,18 @@ import NumberFormat from "react-number-format";
 import style from "./signup.module.css";
 import axios from "axios";
 import Head from "next/head";
+import { useKeycloak } from '@react-keycloak/ssr'
 
 export default function Signin({}) {
 	const [loading, setLoading] = useState(false);
+	const { keycloak } = useKeycloak<KeycloakInstance>();
 
 	useEffect(() => {
 		if (window.location?.search) {
 			let f_arr = new URLSearchParams(window.location.search).get("full_name");
 			let lastName;
 			let firstName;
+			let token = new URLSearchParams(window.location.search).get("token")
 			if (f_arr) {
 				f_arr = f_arr.split(" ");
 				lastName = f_arr.pop();
@@ -29,12 +32,20 @@ export default function Signin({}) {
 				...data,
 				name: new URLSearchParams(window.location.search).get("company_name"),
 				email: new URLSearchParams(window.location.search).get("email"),
-				token: new URLSearchParams(window.location.search).get("token"),
+				token: token,
 				firstName: firstName,
 				lastName: lastName,
 			});
 		}
-		console.log(data)
+
+		if(token && keycloak?.authenticated){
+			window.location = `${process.env.NEXT_PUBLIC_D_URL}/integration/redirect?token=${data.token}`;
+		}
+
+		if(keycloak?.authenticated){
+			window.location = `${process.env.NEXT_PUBLIC_D_URL}`;
+		}
+
 	}, []);
 
 	let [errors, setErrors] = useState({

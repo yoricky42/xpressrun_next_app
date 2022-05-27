@@ -650,10 +650,15 @@
     "mixin-deep" "^1.2.0"
     "pascalcase" "^0.1.1"
 
-"base64-js@^1.0.2", "base64-js@^1.3.1", "base64-js@^1.5.1":
+"base64-js@^1.0.2", "base64-js@^1.3.1":
   "integrity" "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA=="
   "resolved" "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz"
   "version" "1.5.1"
+
+"base64-js@1.3.1":
+  "integrity" "sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g=="
+  "resolved" "https://registry.npmjs.org/base64-js/-/base64-js-1.3.1.tgz"
+  "version" "1.3.1"
 
 "big.js@^5.2.2":
   "integrity" "sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ=="
@@ -1210,10 +1215,10 @@
   dependencies:
     "safe-buffer" "5.2.1"
 
-"cookie@^0.5.0":
-  "integrity" "sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw=="
-  "resolved" "https://registry.npmjs.org/cookie/-/cookie-0.5.0.tgz"
-  "version" "0.5.0"
+"cookie@^0.4.1":
+  "integrity" "sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA=="
+  "resolved" "https://registry.npmjs.org/cookie/-/cookie-0.4.2.tgz"
+  "version" "0.4.2"
 
 "copy-concurrently@^1.0.0":
   "integrity" "sha512-f2domd9fsVDFtaFcbaRZuYXwtdmnzqbADSwhSWYxYB/Q8zsdUUFMXVRwXGDMWmbEzAn1kdRrtI1T/KTFOL4X2A=="
@@ -3254,7 +3259,7 @@
   "resolved" "https://registry.npmjs.org/js-cookie/-/js-cookie-2.2.1.tgz"
   "version" "2.2.1"
 
-"js-sha256@^0.9.0":
+"js-sha256@0.9.0":
   "integrity" "sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA=="
   "resolved" "https://registry.npmjs.org/js-sha256/-/js-sha256-0.9.0.tgz"
   "version" "0.9.0"
@@ -3306,13 +3311,13 @@
     "array-includes" "^3.1.4"
     "object.assign" "^4.1.2"
 
-"keycloak-js@^18.0.0", "keycloak-js@>=9.0.2":
-  "integrity" "sha512-kaD6nrzgYX3NhgwQfVEZiAzaZXua3PSBIBWGWf8fgqPgUdiO8uvYaKV1Ebf43IAB5M8kvubW+2J+eBS+UnWsuw=="
-  "resolved" "https://registry.npmjs.org/keycloak-js/-/keycloak-js-18.0.0.tgz"
-  "version" "18.0.0"
+"keycloak-js@^11.0.2", "keycloak-js@>=9.0.2":
+  "integrity" "sha512-e2OVyCiru25UhJz3aPj5irf//+vJzvAhHdcsCIWAcvF8Te22iUoZqEdNFji8D3zNzDehX4VpuIJwQOYCj6rqTA=="
+  "resolved" "https://registry.npmjs.org/keycloak-js/-/keycloak-js-11.0.3.tgz"
+  "version" "11.0.3"
   dependencies:
-    "base64-js" "^1.5.1"
-    "js-sha256" "^0.9.0"
+    "base64-js" "1.3.1"
+    "js-sha256" "0.9.0"
 
 "keyv@3.0.0":
   "integrity" "sha512-eguHnq22OE3uVoSYG0LVWNP+4ppamWr9+zWBe1bsNcovIMy6huUJFPgy4mGwCd/rnl3vOLGW1MTlu4c57CT1xA=="

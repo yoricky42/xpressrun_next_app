@@ -14,7 +14,7 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 const keycloakCfg = {
 	realm: "xpressrun",
 	url: "https://api.xpressrun.com/auth",
-	clientId: "react-app-cli",
+	clientId: "react-app-cli-dev",
 };
 
 const links = [
@@ -38,29 +38,30 @@ function MyApp({
 	cookies,
 	...appProps
 }: AppProps & InitialProps) {
-	if (!links.includes(appProps.router.pathname)) {
-		if ([`/signup`].includes(appProps.router.pathname)) {
-			return (
-				<LayoutSingup>
-					<Component {...pageProps} />
-				</LayoutSingup>
-			);
-		} else if ([`/privacy`].includes(appProps.router.pathname)) {
-			return (
-				<LayoutNavbarRel>
-					<Component {...pageProps} />
-				</LayoutNavbarRel>
-			);
-		}
-
-		return (
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
-		);
-	}
-
-	return <Page404 />;
+	return (
+		<SSRKeycloakProvider
+			keycloakConfig={keycloakCfg}
+			initOptions={{ onLoad: "check-sso", checkLoginIframe: true }}
+			persistor={SSRCookies(cookies)}>
+			{!links.includes(appProps.router.pathname) ? (
+				[`/signup`].includes(appProps.router.pathname) ? (
+					<LayoutSingup>
+						<Component {...pageProps} />
+					</LayoutSingup>
+				) : [`/privacy`].includes(appProps.router.pathname) ? (
+					<LayoutNavbarRel>
+						<Component {...pageProps} />
+					</LayoutNavbarRel>
+				) : (
+					<Layout>
+						<Component {...pageProps} />
+					</Layout>
+				)
+			) : (
+				<Page404 />
+			)}
+		</SSRKeycloakProvider>
+	);
 }
 
 function parseCookies(req?: IncomingMessage) {
