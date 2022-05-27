@@ -39,28 +39,45 @@ function MyApp({
 	...appProps
 }: AppProps & InitialProps) {
 	return (
-		<SSRKeycloakProvider
-			keycloakConfig={keycloakCfg}
-			initOptions={{ onLoad: "check-sso", checkLoginIframe: true }}
-			persistor={SSRCookies(cookies)}>
-			{!links.includes(appProps.router.pathname) ? (
-				[`/signup`].includes(appProps.router.pathname) ? (
-					<LayoutSingup>
-						<Component {...pageProps} />
-					</LayoutSingup>
-				) : [`/privacy`].includes(appProps.router.pathname) ? (
-					<LayoutNavbarRel>
-						<Component {...pageProps} />
-					</LayoutNavbarRel>
-				) : (
-					<Layout>
-						<Component {...pageProps} />
-					</Layout>
-				)
+		!links.includes(appProps.router.pathname) ? (
+			[`/signup`].includes(appProps.router.pathname) ? (
+				<LayoutSingup>
+					<Component {...pageProps} />
+				</LayoutSingup>
+			) : [`/privacy`].includes(appProps.router.pathname) ? (
+				<LayoutNavbarRel>
+					<Component {...pageProps} />
+				</LayoutNavbarRel>
 			) : (
-				<Page404 />
-			)}
-		</SSRKeycloakProvider>
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+			)
+		) : (
+			<Page404 />
+		)
+		// <SSRKeycloakProvider
+		// 	keycloakConfig={keycloakCfg}
+		// 	initOptions={{ onLoad: "check-sso", checkLoginIframe: false }}
+		// 	persistor={SSRCookies(cookies)}>
+		// 	{!links.includes(appProps.router.pathname) ? (
+		// 		[`/signup`].includes(appProps.router.pathname) ? (
+		// 			<LayoutSingup>
+		// 				<Component {...pageProps} />
+		// 			</LayoutSingup>
+		// 		) : [`/privacy`].includes(appProps.router.pathname) ? (
+		// 			<LayoutNavbarRel>
+		// 				<Component {...pageProps} />
+		// 			</LayoutNavbarRel>
+		// 		) : (
+		// 			<Layout>
+		// 				<Component {...pageProps} />
+		// 			</Layout>
+		// 		)
+		// 	) : (
+		// 		<Page404 />
+		// 	)}
+		// </SSRKeycloakProvider>
 	);
 }
 
