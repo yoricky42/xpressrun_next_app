@@ -127,7 +127,7 @@ function Home() {
         <div className={style.paddingHomeCenter}>
           <div className={style.shoopifyPubPart}>
             <p className={`${shoopify ? `${style.shpoopifyText}` : `${style.shpoopifyTextOFF}`}`}>
-              Integrate our solution on your shopify store
+              Integrate our solution on your Shopify store
             </p>
             <a href="https://apps.shopify.com/xpressrun" target="_blank" rel="noreferrer">
               <div className={`${shoopify ? `${style.shpoopifyCard}` : `${style.shpoopifyCardOFF}`}`}>
@@ -243,12 +243,12 @@ function Home() {
               style={{ margin: "15px 0" }}
               className={`${style.smallTypeTextAffordable} ${style.smallTypeTextAffordableLong}`}
             >
-              Install & Set up our free shopify app in less than 5 minutes. Once
+              Install & Set up our free Shopify app in less than 5 minutes. Once
               the app is set up, your customers will start seeing a ’Same-Day’
               option at checkout.
             </p>
             <Link
-              href="/business/signup"
+              href="/signup"
               style={{ margin: "15px 0", display: "inline-block" }}
             >
               <a className={`${style.smallTypeTextAffordableLinkPart}`}>
@@ -301,7 +301,7 @@ function Home() {
               platforms available.
             </p>
             <Link
-              href="#"
+              href="signup"
               style={{ margin: "15px 0", display: "inline-block" }}
             >
               <a className={`${style.smallTypeTextAffordableLinkPart}`}>
@@ -362,10 +362,7 @@ function Home() {
         }}
       >
         <div className={`${style.cardPartof} ${style.paddingHomeCenter}`}>
-          <Link
-            href="#"
-          >
-            <a className={`${card ? `${style.Oncard}` : `${style.Oncard1}`}`}>
+            <a href="https://apps.shopify.com/xpressrun" target="_blank" rel="noreferrer" className={`${card ? `${style.Oncard}` : `${style.Oncard1}`}`}>
               <div className={`${style.api} ${style.api1}`}>
                 <Image src={api1} alt="" className={`${style.iconCardImageApi}`} />
               </div>
@@ -377,16 +374,15 @@ function Home() {
                 <Image src={arrowBlack} alt="" />
               </div>
             </a>
-          </Link>
 
           <Link
-            href="#"
+            href="/signup"
           >
             <a className={`${card ? `${style.Oncard}` : `${style.Oncard2}`}`}>
               <div className={`${style.api} ${style.api2}`}>
                 <Image src={api2} alt="" className={`${style.iconCardImageApi}`} />
               </div>
-              <div className={`${style.OncardSmallTitle}`}>Web portail</div>
+              <div className={`${style.OncardSmallTitle}`}>Web Portail</div>
               <p className={`${style.Oncardsmalltext}`}>
               Easily manage deliveries directly from our platform.
               </p>
@@ -397,7 +393,7 @@ function Home() {
           </Link>
 
           <Link
-            href="#"
+            href="/signup"
           >
             <a className={`${card ? `${style.Oncard}` : `${style.Oncard3}`}`}>
               <div className={`${style.api} ${style.api3}`}>
@@ -433,7 +429,7 @@ function Home() {
           <div className={`${style.currentlyElementContainer}`}>
             <div className={`${style.currentlyElementText}`}>
               <p className={`${style.currentlyElementTextBig}`}>
-                Available in all 50 states!
+                Available in all 50 States!
               </p>
             </div>
             <div className={`${style.currentlyElementCard2}`}>

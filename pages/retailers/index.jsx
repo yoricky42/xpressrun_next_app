@@ -138,8 +138,8 @@ function Business() {
           className={`${style.businnesPart2Element} ${style.businnesPart2ElementLeft}`}
         >
           <p className={`${style.businnesPart2ElementTitle}`}>{J}M+</p>
-          <p className={`${style.italic}`}>Delivery Partners</p>
-          <p className={`${style.italic}`}>Network</p>
+          <p className={`${style.italic}`}>Delivery drivers</p>
+          <p className={`${style.italic}`}>in our Network</p>
         </div>
         <div className={`${style.businnesPart2Element}`}>
           <p className={`${style.businnesPart2ElementTitle}`}>{K}%</p>
