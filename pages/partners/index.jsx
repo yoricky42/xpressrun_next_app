@@ -16,7 +16,11 @@ import thirdimg from "../../public/Assets/partners/HugeGlobal.svg";
 import style from "./partners.module.css";
 import Image from "next/image";
 import Head from "next/head";
+<<<<<<< HEAD
 import Link from "next/link"
+=======
+import Link from "next/link";
+>>>>>>> 96929c1cd5a6d9b3cf6a845a0ec82b6ce3021aaa
 
 function partners() {
   return (
@@ -40,7 +44,11 @@ function partners() {
           <div>shared mission of helping local retail thrive.</div>
           </div>
           <div className={`${style.DriverButtonDrive}`}>
+<<<<<<< HEAD
             <Link href="contact_us"><a>Join our network</a></Link>
+=======
+            <Link href="/contact_us"><a>Join our network</a></Link>
+>>>>>>> 96929c1cd5a6d9b3cf6a845a0ec82b6ce3021aaa
           </div>
         </div>
         <div className={`${style.DriverSection1Roue}`}>

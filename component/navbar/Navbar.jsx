@@ -12,19 +12,13 @@ import { faBars, faStream } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar({ children }) {
   const [active, setActive] = useState("");
   const [ToglleNav, SetToglleNav] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [isAuth, setAuth] = useState(true);
 
-  useEffect(() => {
-    setAuth(localStorage.getItem("token") ?? false);
-  }, []);
 
   const ChangeActiveLink = (activeLink) => {
     setActive(activeLink), SetToglleNav(false);
   };
 
   return (
-    !loading && (
       <div id="Header">
         <div>
           <div
@@ -94,7 +88,7 @@ export default function Navbar({ children }) {
                     </li>
                     <li className="nav_item">
                       <a
-                        href={`${process.env.D_URL}/tracking`}
+                        href={`${process.env.NEXT_PUBLIC_D_URL}/tracking`}
                         onClick={() => ChangeActiveLink("tracking")}
                         className={`${
                           active === "tracking"
@@ -195,6 +189,5 @@ export default function Navbar({ children }) {
           </div>
         </div>
       </div>
-    )
   );
 }

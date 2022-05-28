@@ -54,7 +54,7 @@ export const InputFill = ({
 					>
 							
 						{placeholder && (
-							<option selected value={""}>
+							<option value={""}>
 								{placeholder}
 							</option>
 						)}

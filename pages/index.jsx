@@ -3,7 +3,6 @@ import { React, useState, useEffect } from "react";
 // import Navbar from "../NavbarCOMP/Navbar";
 import style from "../styles/Home.module.css";
 
-
 import gifCard from "../public/Assets/home/Delivery Scooter-2.gif";
 import vector1 from "../public/Assets/home/Vector.svg";
 import vector2 from "../public/Assets/home/Vector 2.svg";
@@ -25,33 +24,33 @@ import arrowAffordablelink from "../public/Assets/home/akar-icons_arrow-right.sv
 import arrowBlack from "../public/Assets/home/arrowBlack.svg";
 import { InView } from "react-intersection-observer";
 import Link from "next/link";
-import Head from 'next/head'
+import Head from "next/head";
 import Image from "next/image";
 import TopFunct from "../component/Top/top";
 
 function Home() {
-  const [shoopify, setShoopify] = useState(false);
-  const [affordable, setAffordable] = useState(false);
-  const [Seamless, SetSeamless] = useState(false);
-  const [delivery, setDelivery] = useState(false);
-  const [Fully, SetFully] = useState(false);
-  const [card, Setcard] = useState(false);
-  const [currently, SetCurrently] = useState(false);
-  const [threshold, setThreshold] = useState(0.5);
+	const [shoopify, setShoopify] = useState(false);
+	const [affordable, setAffordable] = useState(false);
+	const [Seamless, SetSeamless] = useState(false);
+	const [delivery, setDelivery] = useState(false);
+	const [Fully, SetFully] = useState(false);
+	const [card, Setcard] = useState(false);
+	const [currently, SetCurrently] = useState(false);
+	const [threshold, setThreshold] = useState(0.5);
 
-  useEffect(() => {
-    if (window.innerWidth > 652) {
-      setThreshold(0.5);
-    } else {
-      setThreshold(0.4);
-    }
-    window.scrollTo({
-      top: 0,
-      behavior: "auto",
-      /* you can also use 'auto' behaviour
+	useEffect(() => {
+		if (window.innerWidth > 652) {
+			setThreshold(0.5);
+		} else {
+			setThreshold(0.4);
+		}
+		window.scrollTo({
+			top: 0,
+			behavior: "auto",
+			/* you can also use 'auto' behaviour
        in place of 'smooth' */
-    });
-  }, []);
+		});
+	}, []);
 
   return (
     <div className={style.home}>
